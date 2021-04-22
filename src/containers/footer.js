@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../components/footer'
+import Icon from '../components/icons'
 
 export function FooterContainer() {
     return(
@@ -8,9 +9,10 @@ export function FooterContainer() {
                 <Footer.Row>
                 <Footer.Column>
                     <Footer.Title>Om oss</Footer.Title>
-                    <Footer.Link href="#">Story</Footer.Link>
-                    <Footer.Link href="#">Clients</Footer.Link>
-                    <Footer.Link href="#">Testimonials</Footer.Link>
+                    <Footer.Link href="#">Tiba</Footer.Link>
+                    <Footer.Link href="#">Andrea</Footer.Link>
+                    <Footer.Link href="#">Rebecka</Footer.Link>
+                    <Footer.Link href="#">Anna</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Title>Kategorier</Footer.Title>
@@ -26,9 +28,9 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Title>Social</Footer.Title>
-                    <Footer.Link href="#">Facebook</Footer.Link>
-                    <Footer.Link href="#">Instagram</Footer.Link>
-                    <Footer.Link href="#">Twitter</Footer.Link>
+                    <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
+                    <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
+                    <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
                 </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>

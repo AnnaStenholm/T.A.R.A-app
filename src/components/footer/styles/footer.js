@@ -30,7 +30,7 @@ export const Row = styled.div`
     }
 `
 
-export const Link = styled.div`
+export const Link = styled.a`
     color: #F0DBC1;
     margin-bottom: 20px;
     font-size: 18px;
@@ -42,7 +42,7 @@ export const Link = styled.div`
     }
 `
 
-export const Title = styled.div`
+export const Title = styled.p`
     font-size: 24px;
     color: #F0DBC1;
     margin-bottom: 40px;
