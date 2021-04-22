@@ -27,7 +27,7 @@ export function FooterContainer() {
                     <Footer.Link href="#">Receptvägen 4, Stockholm</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Social</Footer.Title>
+                    <Footer.Title>Sociala medier</Footer.Title>
                     <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
