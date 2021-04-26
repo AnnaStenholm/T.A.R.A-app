@@ -12,14 +12,15 @@ import KottRecipeForm from './components/forms/KottRecipeForm';
 function App() {
   return (
     <>
-      <VegoRecipeForm/>
-      <FiskRecipeForm/>
-      <KottRecipeForm/>
-      <FooterContainer/>
+      <KategoriVego />
+      <VegoRecipeForm />
+      <FiskRecipeForm />
+      <KottRecipeForm />
+      <FooterContainer />
     </>
   );
-   
-  
+
+
 }
 
 export default App;

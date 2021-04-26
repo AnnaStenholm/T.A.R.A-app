@@ -1,0 +1,73 @@
+/*KATEGORI VEGO*/
+
+
+.container-rosa{
+    margin:auto;
+}
+
+.kategori-titel{
+    margin: 20px 0px 0px 60px;
+    color: #262b2f;
+}
+
+.rosa-ruta{
+    float:left;
+    margin: 60px 20px 15px 60px;
+    width: 237px;
+    height: 320px;
+    background-color: #edc5ba;
+    top: 574px;
+    border-radius: 54px;
+}
+
+.kategori-content{
+    align-items: center;
+    margin: 30px;
+}
+
+.kategori-text a{
+    color: #304227;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 20.7px;
+    size: 18px;
+    text-decoration: none;
+}
+
+.kategori-img{
+    width: 175.22px;
+    height: 175.22px;
+    border-radius: 26.7px;
+    margin-top: 10px;
+}
+
+.kategori-img1{
+    width: 197px;
+    height: 118px;
+    border-radius: 26.7px;
+    margin: 50px 0px 20px 0px;
+}
+
+.kategori{
+   
+    margin: 5px 0px 0px 8px;
+    color: #304227;
+    width: 20px;
+    height: 20px;
+    float: left;
+
+}
+
+.fa-comments{
+    margin: 10px 50px 0px 0px;
+    width: 20px;
+    float:right;
+}
+
+
+.kategori-number{
+    margin: 8px -50px 0px 0px;
+    width: 20px;
+    float: right;
+}
+
