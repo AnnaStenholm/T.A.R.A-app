@@ -6,7 +6,7 @@
 }
 
 .kategori-titel{
-    margin: 20px 0px 0px 60px;
+    margin: 20px 0px 0px 0px;
     color: #262b2f;
 }
 
@@ -19,6 +19,17 @@
     top: 574px;
     border-radius: 54px;
 }
+
+.rosa-ruta1{
+    float:left;
+    margin: 60px 0px 80px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #edc5ba;
+    top: 574px;
+    border-radius: 54px;
+}
+
 
 .kategori-content{
     align-items: center;
