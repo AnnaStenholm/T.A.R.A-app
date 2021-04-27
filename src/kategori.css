@@ -10,7 +10,7 @@
     color: #262b2f;
 }
 
-.rosa-ruta{
+.rosa-ruta-vego{
     float:left;
     margin: 60px 0px 15px 0px;
     width: 237px;
@@ -20,7 +20,7 @@
     border-radius: 54px;
 }
 
-.rosa-ruta1{
+.rosa-ruta-vego1{
     float:left;
     margin: 60px 0px 80px 0px;
     width: 237px;
@@ -82,3 +82,46 @@
     float: right;
 }
 
+/* KATEGORI KÖTT*/
+
+.rosa-ruta-kott{
+    float:left;
+    margin: 60px 0px 15px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #c29c91;
+    top: 574px;
+    border-radius: 54px;
+}
+
+.rosa-ruta-kott1{
+    float:left;
+    margin: 60px 0px 80px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #c29c91;
+    top: 574px;
+    border-radius: 54px;
+}
+
+/*KATEGORI KÖTT*/
+
+.rosa-ruta-fisk{
+    float:left;
+    margin: 60px 0px 15px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #D2B2A9;
+    top: 574px;
+    border-radius: 54px;
+}
+
+.rosa-ruta-fisk1{
+    float:left;
+    margin: 60px 0px 80px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #D2B2A9;
+    top: 574px;
+    border-radius: 54px;
+}

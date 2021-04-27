@@ -11,10 +11,10 @@ function KategoriVego() {
 
         <div className="container">
             <div className="row">
-            <h3 className="kategori-titel">Vegetariska recept</h3>
+            <h3 className="kategori-titel">Veckans utvalda vegetariska recept</h3>
                 
                     <div className="col">
-                        <div className="rosa-ruta">
+                        <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text"><a href="#"></a></div>
                                 <div className="kategori-img" src=""><a href="#">
@@ -26,7 +26,7 @@ function KategoriVego() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="rosa-ruta">
+                        <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text"><a href="#"></a></div>
                                 <div className="kategori-img" src=""><a href="#">
@@ -38,7 +38,7 @@ function KategoriVego() {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="rosa-ruta">
+                        <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text"><a href="#"></a></div>
                                 <div className="kategori-img" src=""><a href="#">
@@ -52,7 +52,7 @@ function KategoriVego() {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <div className="rosa-ruta1">
+                            <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
                                     <div className="kategori-text"><a href="#"></a></div>
                                     <div className="kategori-img1" src=""><a href="#">
@@ -64,7 +64,7 @@ function KategoriVego() {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="rosa-ruta1">
+                            <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
                                     <div className="kategori-text"><a href="#"></a></div>
                                     <div className="kategori-img" src=""><a href="#">
@@ -76,7 +76,7 @@ function KategoriVego() {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="rosa-ruta1">
+                            <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
                                     <div className="kategori-text"></div><a href="#"></a>
                                     <div className="kategori-img" src=""><a href="#">
