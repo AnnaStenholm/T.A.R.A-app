@@ -5,6 +5,8 @@ import KategoriVego from './KategoriVego';
 import KategoriKott from './KategoriKott';
 import KategoriFisk from './KategoriFisk';
 import Page from './Page';
+import RecipeTable from './components/RecipeTable';
+import RecipeDiv from './components/RecipeDiv';
 import { FooterContainer } from './containers/footer';
 import { 
   BrowserRouter as Router, 
@@ -37,6 +39,14 @@ const App = () => <Router>
 //Rebecka
     <Route path="/page">
       <Page/>
+    </Route>
+
+    <Route path="/table">
+      <RecipeTable/>
+    </Route>
+
+    <Route path="/div">
+      <RecipeDiv/>
     </Route>
 
   </Switch>
