@@ -7,16 +7,18 @@ const RecipeTable = () => {
     const [recipeData, setRecipeData] = useState([]); 
 
     useEffect(() => {
+        if (recipeData.length === 0) {
             fetch(url)
                 .then(res => res.json())
                 .then((data) => setRecipeData(data)); 
-    })
+        }        
+    });
     
     return (
     <ul> 
         {
             recipeData.map(recipe => 
-        <li>
+        <li key={recipe._id}>
             <strong>{recipe.title}</strong>
             <div>{recipe.content}</div>
         </li>)
