@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     padding: 80px 60px;
     background: #304227;
+    margin: auto;
 `
 
 export const Wrapper = styled.div`
