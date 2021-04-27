@@ -6,7 +6,7 @@ import KategoriKott from './KategoriKott';
 import KategoriFisk from './KategoriFisk';
 import Page from './Page';
 import RecipeTable from './components/RecipeTable';
-import RecipeDiv from './components/RecipeDiv';
+import AllRecipes from './components/AllRecipes';
 import { FooterContainer } from './containers/footer';
 import { 
   BrowserRouter as Router, 
@@ -45,8 +45,8 @@ const App = () => <Router>
       <RecipeTable/>
     </Route>
 
-    <Route path="/div">
-      <RecipeDiv/>
+    <Route path="/recept/:kategori">
+      <AllRecipes/>
     </Route>
 
   </Switch>
