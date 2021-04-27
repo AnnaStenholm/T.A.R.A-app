@@ -1,11 +1,13 @@
 import React from 'react';
+import { FooterContainer } from './containers/footer';
 
+const Startsida = () => {
+return (
+<>
+<h1>Startsida</h1>
+<FooterContainer/>
+</>
 
-const startsida = () => {
-return
-
-
-
+);
 }
-
-export default startsida;
+export default Startsida;

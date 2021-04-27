@@ -1,10 +1,11 @@
 import React from 'react';
 import App from './App';
 import './kategori.css';
+import { FooterContainer } from './containers/footer';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-function vego() {
+function KategoriVego() {
     return <div>
 
 
@@ -89,6 +90,7 @@ function vego() {
                         </div>
                     
                 </div>
+        <FooterContainer/>
            </div>
        
     
@@ -96,4 +98,4 @@ function vego() {
 
 }
 
-export default vego;
+export default KategoriVego;
