@@ -36,27 +36,33 @@
     margin: 30px;
 }
 
-.kategori-text a{
+.kategori-text{
     color: #304227;
     font-weight: bold;
     font-style: normal;
     line-height: 20.7px;
     size: 18px;
     text-decoration: none;
+    text-align: center;
 }
 
-.kategori-img{
+.kategori-text a{
+    text-decoration: none;
+    
+}
+
+.kategori-img img{
     width: 175.22px;
     height: 175.22px;
     border-radius: 26.7px;
-    margin-top: 10px;
+    margin: 20px 0px 11px 0px;
 }
 
-.kategori-img1{
+.kategori-img1 img{
     width: 197px;
     height: 118px;
     border-radius: 26.7px;
-    margin: 50px 0px 20px 0px;
+    margin: 30px 0px 35px -10px;
 }
 
 .kategori{
@@ -104,7 +110,7 @@
     border-radius: 54px;
 }
 
-/*KATEGORI KÖTT*/
+/*KATEGORI FISK*/
 
 .rosa-ruta-fisk{
     float:left;

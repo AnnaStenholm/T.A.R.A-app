@@ -16,8 +16,8 @@ function KategoriVego() {
                     <div className="col">
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
-                                <div className="kategori-text"><a href="#"></a></div>
-                                <div className="kategori-img" src=""><a href="#">
+                                <div className="kategori-text">Vegotacos med blomkål, refried beans, ris och fetaost<a href="#"></a></div>
+                                <div className="kategori-img" src="./bilder/vegotacos1.jpeg"><a href="#">
                                 </a></div>
                                 <div className="kategori"><i>Vegetariskt</i></div>
                                 <i className="far fa-comments"></i>
@@ -28,8 +28,8 @@ function KategoriVego() {
                     <div className="col">
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
-                                <div className="kategori-text"><a href="#"></a></div>
-                                <div className="kategori-img" src=""><a href="#">
+                                <div className="kategori-text">Vegetarisk aubergingratäng<a href="#"></a></div>
+                                <div className="kategori-img" src="./bilder/vegetarisk-auberginegratang.jpeg"><a href="#">
                                 </a></div>
                                 <div className="kategori"><i>Vegetariskt</i></div>
                                 <i className="far fa-comments"></i>
@@ -40,8 +40,8 @@ function KategoriVego() {
                     <div className="col">
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
-                                <div className="kategori-text"><a href="#"></a></div>
-                                <div className="kategori-img" src=""><a href="#">
+                                <div className="kategori-text">Vårrullar med limemarinerad lök och hoisinsås<a href="#"></a></div>
+                                <div className="kategori-img" src='./bilder/varrullar.jpeg'><a href="#">
                                 </a></div>
                                 <div className="kategori"><i>Vegetariskt</i></div>
                                 <i className="far fa-comments"></i>
