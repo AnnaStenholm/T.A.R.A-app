@@ -1,6 +1,14 @@
 import React from 'react';
 import App from './App';
 import './kategori.css';
+
+import tomatbruschetta from './bilder/tomatbruschetta.jpg';
+import vegetacos from './bilder/vegotacos1.jpeg';
+import aubergin from './bilder/auberginegratang.jpeg';
+import varrullar from './bilder/varrullar.jpeg';
+import pesto from './bilder/spesto-genovese.jpeg';
+import risotto from './bilder/risotto_milanese.jpeg';
+
 import { FooterContainer } from './containers/footer';
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -17,7 +25,7 @@ function KategoriVego() {
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text">Vegotacos med blomkål, refried beans, ris och fetaost<a href="#"></a></div>
-                                <div className="kategori-img" src="./bilder/vegotacos1.jpeg"><a href="#">
+                                <div className="kategori-img"><img src={vegetacos} alt="Vegotacos med blomkål, refried beans, ris och fetaost"/><a href="#">
                                 </a></div>
                                 <div className="kategori"><i>Vegetariskt</i></div>
                                 <i className="far fa-comments"></i>
@@ -29,7 +37,7 @@ function KategoriVego() {
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text">Vegetarisk aubergingratäng<a href="#"></a></div>
-                                <div className="kategori-img" src="./bilder/vegetarisk-auberginegratang.jpeg"><a href="#">
+                                <div className="kategori-img"><img src={aubergin} alt="Vegetarisk aubergingratäng"/><a href="#">
                                 </a></div>
                                 <div className="kategori"><i>Vegetariskt</i></div>
                                 <i className="far fa-comments"></i>
@@ -41,7 +49,7 @@ function KategoriVego() {
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text">Vårrullar med limemarinerad lök och hoisinsås<a href="#"></a></div>
-                                <div className="kategori-img" src='./bilder/varrullar.jpeg'><a href="#">
+                                <div className="kategori-img"><img  src={varrullar} alt="Vårrullar med limemarinerad lök och hoisinsås"/><a href="#">
                                 </a></div>
                                 <div className="kategori"><i>Vegetariskt</i></div>
                                 <i className="far fa-comments"></i>
@@ -54,8 +62,8 @@ function KategoriVego() {
                         <div className="col">
                             <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
-                                    <div className="kategori-text"><a href="#"></a></div>
-                                    <div className="kategori-img1" src=""><a href="#">
+                                    <div className="kategori-text">Tomatbruschetta<a href="#"></a></div>
+                                    <div className="kategori-img1"><img src={tomatbruschetta} alt="Tomatbruschetta"/><a href="#">
                                     </a></div>
                                     <div className="kategori"><i>Vegetariskt</i></div>
                                     <i className="far fa-comments"></i>
@@ -66,8 +74,8 @@ function KategoriVego() {
                         <div className="col">
                             <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
-                                    <div className="kategori-text"><a href="#"></a></div>
-                                    <div className="kategori-img" src=""><a href="#">
+                                    <div className="kategori-text">Pesto genovese<a href="#"></a></div>
+                                    <div className="kategori-img"><img src={pesto} alt="Pesto genovese"/><a href="#">
                                     </a></div>
                                     <div className="kategori"><i>Vegetariskt</i></div>
                                     <i className="far fa-comments"></i>
@@ -78,8 +86,8 @@ function KategoriVego() {
                         <div className="col">
                             <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
-                                    <div className="kategori-text"></div><a href="#"></a>
-                                    <div className="kategori-img" src=""><a href="#">
+                                    <div className="kategori-text">Risotto milanese</div><a href="#"></a>
+                                    <div className="kategori-img"><img src={risotto} alt="Risotto milanese"/><a href="#">
                                     </a></div>
                                     <div className="kategori"><i>Vegetariskt</i></div>
                                     <i className="far fa-comments"></i>
