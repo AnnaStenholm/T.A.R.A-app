@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Axios from 'axios';
+import './style/form.css';
 
 const FiskRecipeForm = () => {
     const url ="https://forum-api-jkrop.ondigitalocean.app/category/608284a6282ecd001e7dd30c/thread";
