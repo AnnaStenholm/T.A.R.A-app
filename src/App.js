@@ -7,7 +7,8 @@ import KategoriFisk from './KategoriFisk';
 import Page from './Page';
 import RecipeTable from './components/RecipeTable';
 import AllRecipes from './components/AllRecipes';
-import { FooterContainer } from './containers/footer';
+import Comments from './components/Comments';
+
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -15,7 +16,7 @@ import {
   Link } from "react-router-dom";
 
 
-const App = () => <Router>
+const App = (props) => <Router>
   <Switch>
 
 //Tibah 
@@ -45,9 +46,17 @@ const App = () => <Router>
       <RecipeTable/>
     </Route>
 
+
+
     <Route path="/recept/:kategori">
       <AllRecipes/>
     </Route>
+
+    <Route path="/kommentarer">
+      <Comments/>
+    </Route>
+
+
 
   </Switch>
 </Router>
