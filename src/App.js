@@ -1,9 +1,9 @@
 //import React from 'react';
 import './App.css';
 import Startsida from './Startsida';
-import KategoriVego from './KategoriVego';
-import KategoriKott from './KategoriKott';
-import KategoriFisk from './KategoriFisk';
+import KategoriVego from './categories/KategoriVego';
+import KategoriKott from './categories/KategoriKott';
+import KategoriFisk from './categories/KategoriFisk';
 import Page from './Page';
 import RecipeTable from './components/RecipeTable';
 import AllRecipes from './components/AllRecipes';

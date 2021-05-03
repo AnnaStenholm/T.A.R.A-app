@@ -1,15 +1,15 @@
 import React from 'react';
-import App from './App';
-import './kategori.css';
+import App from '../App';
+import './style/kategori.css';
 
-import biff_bea1 from './bilder/biff_bea1.jpeg';
-import spaghetti_bolognese from './bilder/spaghetti-bolognese.jpeg';
-import coteboef from './bilder/boeuf-steak.jpeg';
-import oxfile from './bilder/oxfile.jpeg';
-import bulgogi from './bilder/bulgogi.jpeg';
-import burgare from './bilder/hamburgare.jpeg';
+import biff_bea1 from '../bilder/biff_bea1.jpeg';
+import spaghetti_bolognese from '../bilder/spaghetti-bolognese.jpeg';
+import coteboef from '../bilder/boeuf-steak.jpeg';
+import oxfile from '../bilder/oxfile.jpeg';
+import bulgogi from '../bilder/bulgogi.jpeg';
+import burgare from '../bilder/hamburgare.jpeg';
 
-import { FooterContainer } from './containers/footer';
+import { FooterContainer } from '../containers/footer';
 import { Container, Row, Col } from 'react-bootstrap';
 
 

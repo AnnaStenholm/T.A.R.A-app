@@ -1,15 +1,15 @@
 import React from 'react';
-import App from './App';
-import './kategori.css';
+import App from '../App';
+import './style/kategori.css';
 
-import skaldjur from './bilder/fisk-och-skaldjursgryta.jpeg';
-import lax from './bilder/lax.jpeg';
-import sushi from './bilder/maki-sushi.jpeg';
-import fishtacos from './bilder/fishtacos.jpeg';
-import fisksas from './bilder/skolans-fisksas.jpg';
-import gravlax from './bilder/gravlaxtartar.jpeg';
+import skaldjur from '../bilder/fisk-och-skaldjursgryta.jpeg';
+import lax from '../bilder/lax.jpeg';
+import sushi from '../bilder/maki-sushi.jpeg';
+import fishtacos from '../bilder/fishtacos.jpeg';
+import fisksas from '../bilder/skolans-fisksas.jpg';
+import gravlax from '../bilder/gravlaxtartar.jpeg';
 
-import { FooterContainer } from './containers/footer';
+import { FooterContainer } from '../containers/footer';
 
 import { Container, Row, Col } from 'react-bootstrap';
 

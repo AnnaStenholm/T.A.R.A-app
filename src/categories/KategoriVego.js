@@ -1,15 +1,15 @@
 import React from 'react';
-import App from './App';
-import './kategori.css';
+import App from '../App';
+import './style/kategori.css';
 
-import tomatbruschetta from './bilder/tomatbruschetta.jpg';
-import vegetacos from './bilder/vegotacos1.jpeg';
-import aubergin from './bilder/auberginegratang.jpeg';
-import varrullar from './bilder/varrullar.jpeg';
-import pesto from './bilder/spesto-genovese.jpeg';
-import risotto from './bilder/risotto_milanese.jpeg';
+import tomatbruschetta from '../bilder/tomatbruschetta.jpg';
+import vegetacos from '../bilder/vegotacos1.jpeg';
+import aubergin from '../bilder/auberginegratang.jpeg';
+import varrullar from '../bilder/varrullar.jpeg';
+import pesto from '../bilder/spesto-genovese.jpeg';
+import risotto from '../bilder/risotto_milanese.jpeg';
 
-import { FooterContainer } from './containers/footer';
+import { FooterContainer } from '../containers/footer';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
