@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import CommentLink from './CommentLink';
 import CommentDiv from './CommentDiv';
+import { loadRecipeData } from './redux/recipeReducer';
 
 const categories = {
     vego: "60828412282ecd001e7dd309",
@@ -15,21 +16,19 @@ const RecipeDiv = ({kategori}) => {
     let recipeUrl;
     const [recipeData, setRecipeData] = useState([]); 
 
-    if (categoryId){
-    recipeUrl =
-    `https://forum-api-jkrop.ondigitalocean.app/category/${categoryId}/thread`;
+    const dispatch = useDispatch();
 
+
+    if (categoryId){
+    recipeUrl = `https://forum-api-jkrop.ondigitalocean.app/category/${categoryId}/thread`;
     }
 
 
     useEffect(() => {
-        dispatch({ type: 'LOAD_RECIPE_DATA', payload: recipeUrl });
-        if (url) {
-            fetch(url)
-                .then(res => res.json())
-                .then((data) => setRecipeData(data)); 
+        if (recipeUrl) {
+        dispatch(loadRecipeData(recipeUrl));
         }        
-    }, [ url ]);
+    }, [ recipeUrl ]);
 
     if (!categoryId) {
 

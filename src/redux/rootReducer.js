@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import threadIdReducer from './threadIdReducer';
+import recipeReducer from './recipeReducer';
 
 
 const rootReducer = combineReducers({
 
-        threadId: threadIdReducer,
+        recipe: recipeReducer,
 
     });
 
