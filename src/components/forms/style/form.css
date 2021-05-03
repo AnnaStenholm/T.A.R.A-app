@@ -1,0 +1,81 @@
+.container {
+    min-height: 600px;
+    margin-bottom: 100px;
+}
+
+.heading-box{
+    margin: 200px 0px 50px 0px;
+}
+
+
+.heading-form{
+    text-align: center;
+    color: #51321D;
+    
+}
+
+.form-box{
+    float: right;
+    height: 492px;
+    width: 302px;
+    background-color: #ffff;
+    border-style: outset;
+    border-width: 3px;
+    margin: 0px 50px 80px 0px;
+}
+
+form{
+    text-align: center;
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+textarea{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-category{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.content-title{
+    margin-bottom: 30px;
+}
+
+.content-recipe{
+   margin-bottom: 60px; 
+}
+
+button{
+    align-items: center;
+    background-color: #304227;
+    color: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.vego-box{
+    width: 150px;
+    height: 93.16px;
+    border-radius: 20px;
+    background-color: #EDC5BA;
+    margin: 80px 30px 20px 70px;
+}
+
+.kott-box{
+    width: 150px;
+    height: 93.16px;
+    border-radius: 20px;
+    background-color: #C29C91;
+    margin: 80px 30px 20px 70px;
+}
+
+.fisk-box{
+    width: 150px;
+    height: 93.16px;
+    border-radius: 20px;
+    background-color: #CF9C8E;
+    margin: 80px 30px 20px 70px;
+}
