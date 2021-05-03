@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
-
+import { useDispatch, useSelector } from 'react-redux';
+import CommentLink from './CommentLink';
+import CommentDiv from './CommentDiv';
+import { loadRecipeData } from '.././redux/categoryReducer';
 
 const categories = {
     vego: "60828412282ecd001e7dd309",
@@ -10,23 +13,24 @@ const categories = {
 const RecipeDiv = ({kategori}) => {
 
     const categoryId = categories[kategori];
-    let url;
-    const [recipeData, setRecipeData] = useState([]); 
+    let categoryUrl;
+    
+    const recipeData = useSelector(state => state.category.data); 
+
+    const dispatch = useDispatch();
+
 
     if (categoryId){
-    url =
-    `https://forum-api-jkrop.ondigitalocean.app/category/${categoryId}/thread`;
-
+    categoryUrl = `https://forum-api-jkrop.ondigitalocean.app/category/${categoryId}/thread`;
     }
 
 
     useEffect(() => {
-        if (url) {
-            fetch(url)
-                .then(res => res.json())
-                .then((data) => setRecipeData(data)); 
+        
+        if (categoryUrl) {
+            dispatch(loadRecipeData(categoryUrl));
         }        
-    }, [ url ]);
+    }, [ categoryUrl ]);
 
     if (!categoryId) {
 
@@ -39,8 +43,13 @@ const RecipeDiv = ({kategori}) => {
         {
             recipeData.map(recipe => 
         <div key={recipe._id}>
-            <strong>{recipe.title}</strong>
+            <br></br>
+            <h5>Recept: {recipe.title}</h5>
             <div>{recipe.content}</div>
+            <br></br>
+            <h5>Kommentarer</h5>
+            <CommentDiv recipeId={recipe._id}/>
+            <div><CommentLink /></div>
         </div>)
         } 
     </>
