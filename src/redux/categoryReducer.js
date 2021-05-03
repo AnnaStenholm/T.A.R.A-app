@@ -1,10 +1,10 @@
 const INITIAL_STATE = {
-        data: [],
-    };
+        data: []
+    }; 
 
-   export const loadRecipeData = (recipeUrl) => {
+   export const loadRecipeData = (categoryUrl) => {
       return (dispatch) => {    
-         fetch(recipeUrl)
+         fetch(categoryUrl)
          .then(res => res.json())
          .then((data) => dispatch( { type: 'LOAD_RECIPE_DATA_SUCCESS', payload: data })); 
       };
@@ -14,7 +14,6 @@ const INITIAL_STATE = {
         switch (action.type) {
             case "LOAD_RECIPE_DATA_SUCCESS":
                return { data: action.payload }
-
              default: 
              return state;
         }
