@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Axios from 'axios';
+import './style/form.css';
 
 const KottRecipeForm = () => {
     const url ="https://forum-api-jkrop.ondigitalocean.app/category/60828441282ecd001e7dd30b/thread";
@@ -27,15 +28,16 @@ const KottRecipeForm = () => {
     
 
   return <div>
-      <h1>Kött</h1>
+      <h2 className="title-category">Kött</h2>
       <form onSubmit={(e)=> submit(e)}>
-                <div>
+                <div className="content-title">
                 <input onChange={(e)=>handle(e)} id="title" value={data.title} placeholder="Rubrik" type='text'></input>
                 </div>
-                <div>
+                <div className="content-recipe">
                 <textarea onChange={(e)=>handle(e)} id="content" value={data.content} placeholder="Skriv ditt recept här." type='text' />
                 </div>
                 <button>Publicera</button>
+                <div className="kott-box"></div>
             </form>
         </div>
 
