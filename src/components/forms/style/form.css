@@ -1,5 +1,10 @@
+body{
+    min-height: 1070px;
+    margin-bottom: 100px; 
+}
+
 .container {
-    min-height: 600px;
+    min-height: 1070px;
     margin-bottom: 100px;
 }
 
@@ -64,7 +69,7 @@ button{
     margin: 80px 30px 20px 70px;
 }
 
-.kott-box{
+.meat-box{
     width: 150px;
     height: 93.16px;
     border-radius: 20px;
@@ -72,10 +77,28 @@ button{
     margin: 80px 30px 20px 70px;
 }
 
-.fisk-box{
+.fish-box{
     width: 150px;
     height: 93.16px;
     border-radius: 20px;
     background-color: #CF9C8E;
     margin: 80px 30px 20px 70px;
+}
+
+.icon-vego img{
+    width: 50px;
+    height: 70px;
+    margin: 5px 0px 0px 15px
+}
+
+.icon-meat img{
+    width: 50px;
+    height:70px;
+    margin: 8px 0px 0px 15px
+}
+
+.icon-fish img{
+    width: 50px;
+    height:70px;
+    margin: 8px 0px 0px 5px
 }
