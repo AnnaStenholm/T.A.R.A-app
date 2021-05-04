@@ -1,10 +1,9 @@
 //import React from 'react';
-import './App.css';
-import Startsida from './Startsida';
-import KategoriVego from './categories/KategoriVego';
-import KategoriKott from './categories/KategoriKott';
-import KategoriFisk from './categories/KategoriFisk';
-import Page from './Page';
+import Startsida from './pages/Startsida';
+import KategoriVego from './pages/KategoriVego';
+import KategoriKott from './pages/KategoriKott';
+import KategoriFisk from './pages/KategoriFisk';
+import PostPage from './pages/PostPage';
 import RecipeTable from './components/RecipeTable';
 import AllRecipes from './components/AllRecipes';
 import Comments from './components/Comments';
@@ -38,8 +37,8 @@ const App = (props) => <Router>
     </Route>
 
 //Rebecka
-    <Route path="/page">
-      <Page/>
+    <Route path="/postpage">
+      <PostPage/>
     </Route>
 
     <Route path="/table">

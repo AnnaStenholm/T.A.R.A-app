@@ -10,8 +10,10 @@ import fisksas from '../bilder/skolans-fisksas.jpg';
 import gravlax from '../bilder/gravlaxtartar.jpeg';
 
 import { FooterContainer } from '../containers/footer';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComments} from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
+
 
 function KategoriFisk() {
     return <div>
@@ -27,7 +29,7 @@ function KategoriFisk() {
                             <div className="kategori-img"><img src={skaldjur} alt="Enkel fisk- och skaldjurssoppa med vitlöksaioli"/><a href="#">
                             </a></div>
                             <div className="kategori"><i>Fisk</i></div>
-                            <i className="far fa-comments"></i>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">14</div>
                         </div>
                     </div>

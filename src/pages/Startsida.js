@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterContainer } from './containers/footer';
+import { FooterContainer } from '../containers/footer';
 
 const Startsida = () => {
 return (
