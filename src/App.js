@@ -45,7 +45,7 @@ const App = (props) => <Router>
     <Gryta/>
     </Route>
 
-    <Route path="/recept/:kategori">
+    <Route exact path="/recept/:kategori">
       <AllRecipes/>
     </Route>
 
