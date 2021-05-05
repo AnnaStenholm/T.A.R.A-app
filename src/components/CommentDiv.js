@@ -1,10 +1,14 @@
-import ReactDOM from "react-dom";
+import {  Link, useParams } from "react-router-dom";
 import React, { Component, useEffect, useState } from 'react';
 
+import RecipeDiv from './RecipeDiv';
 
 const CommentDiv = ({recipeId}) => {
 
+    const {id} = useParams();
+    if(recipeId == null || recipeId == undefined) { recipeId = id; }
     
+    console.log('Hej', recipeId)
     let url;
     const [commentData, setCommentData] = useState([]); 
 
@@ -34,8 +38,10 @@ const CommentDiv = ({recipeId}) => {
         {
             commentData.map(comment => 
         <div key={comment._id}>
+        
             <strong>{comment.title}</strong>
             <div>{comment.content}</div>
+        
         </div>)
         } 
     </>

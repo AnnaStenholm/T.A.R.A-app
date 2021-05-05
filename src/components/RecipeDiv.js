@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import CommentLink from './CommentLink';
 import CommentDiv from './CommentDiv';
-import { loadRecipeData } from '.././redux/categoryReducer';
+
+import PostLike from './PostLike';
+import { loadRecipeData } from '.././redux/categorySlice';
+import { Container, Row, Col } from 'react-bootstrap'; //3.1K (gzipped: 1.3K)
 
 const categories = {
     vego: "60828412282ecd001e7dd309",
@@ -14,7 +17,6 @@ const RecipeDiv = ({kategori}) => {
 
     const categoryId = categories[kategori];
     let categoryUrl;
-    
     const recipeData = useSelector(state => state.category.data); 
 
     const dispatch = useDispatch();
@@ -32,6 +34,8 @@ const RecipeDiv = ({kategori}) => {
         }        
     }, [ categoryUrl ]);
 
+    
+
     if (!categoryId) {
 
         return <p><strong>Kategorin hittades inte</strong></p>
@@ -40,21 +44,30 @@ const RecipeDiv = ({kategori}) => {
 
     return (
     <> 
+   
+    
         {
-            recipeData.map(recipe => 
-        <div key={recipe._id}>
-            <br></br>
-            <h5>Recept: {recipe.title}</h5>
-            <div>{recipe.content}</div>
-            <br></br>
-            <h5>Kommentarer</h5>
-            <CommentDiv recipeId={recipe._id}/>
-            <div><CommentLink /></div>
-        </div>)
-        } 
+        recipeData.map(recipe => 
+        <div key={recipe._id} className="card" style={{ marginBottom: '2em' }}>
+            <div className="card-body">
+
+                <h5 className="card-title">{recipe.title}</h5>
+                <p className="card-text">{recipe.content}</p>
+            
+        <div>
+            <div style={{ float:'left', marginRight: '10px'}}>{recipe.likes.length}</div><PostLike likeId={recipe._id}/>
+            <div style={{ float:'left', marginRight: '10px'}}>{recipe.comments.length}</div><CommentLink recipeId={recipe._id} />
+        </div>
+
+
+            </div>
+        </div>
+        )};
+
     </>
+
     );
     }
 };
-
+ 
 export default RecipeDiv;

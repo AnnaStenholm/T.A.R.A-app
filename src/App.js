@@ -4,9 +4,9 @@ import KategoriVego from './pages/KategoriVego';
 import KategoriKott from './pages/KategoriKott';
 import KategoriFisk from './pages/KategoriFisk';
 import PostPage from './pages/PostPage';
-import RecipeTable from './components/RecipeTable';
 import AllRecipes from './components/AllRecipes';
-import Comments from './components/Comments';
+import CommentDiv from './components/CommentDiv';
+import Gryta from './components/Ikoner/Gryta';
 
 import { 
   BrowserRouter as Router, 
@@ -41,18 +41,16 @@ const App = (props) => <Router>
       <PostPage/>
     </Route>
 
-    <Route path="/table">
-      <RecipeTable/>
+    <Route path="/laddar">
+    <Gryta/>
     </Route>
-
-
 
     <Route path="/recept/:kategori">
       <AllRecipes/>
     </Route>
 
-    <Route path="/kommentarer">
-      <Comments/>
+    <Route path="/recept/:id/kommentarer">
+      <CommentDiv/>
     </Route>
 
 
