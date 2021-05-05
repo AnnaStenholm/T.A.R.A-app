@@ -9,29 +9,31 @@ import oxfile from '../bilder/oxfile.jpeg';
 import bulgogi from '../bilder/bulgogi.jpeg';
 import burgare from '../bilder/hamburgare.jpeg';
 
-import { FooterContainer } from '../containers/footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComments} from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 
+import { FooterContainer } from '../containers/footer';
 
 function KategoriKott() {
     return <div>
 
-        <div className="container">
-            <div className="row">
+        <Container>
+            <Row>
                 <h3 className="kategori-titel">Veckans utvalda kött recept</h3>
 
-                <div className="col">
+                <Col>
                     <div className="rosa-ruta-kott">
                         <div className="kategori-content">
                             <div className="kategori-text">Spagetti bolognese<a href="#"></a></div>
                             <div className="kategori-img"><img src={spaghetti_bolognese} alt="Spaghetti Bolognese"/><a href="#">
                             </a></div>
                             <div className="kategori"><i>Kött</i></div>
-                            <i className="far fa-comments"></i>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">13</div>
                         </div>
                     </div>
-                </div>
+                    </Col>
                 <div className="col">
                     <div className="rosa-ruta-kott">
                         <div className="kategori-content">
@@ -56,7 +58,7 @@ function KategoriKott() {
                         </div>
                     </div>
                 </div>
-            </div>
+                </Row>
             <div className="row">
                 <div className="col">
                     <div className="rosa-ruta-kott1">
@@ -96,7 +98,7 @@ function KategoriKott() {
                 </div>
             </div>
 
-        </div>
+            </Container>
         <FooterContainer />
     </div>
 }

@@ -9,19 +9,22 @@ import varrullar from '../bilder/varrullar.jpeg';
 import pesto from '../bilder/spesto-genovese.jpeg';
 import risotto from '../bilder/risotto_milanese.jpeg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComments} from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col } from 'react-bootstrap';
+
 import { FooterContainer } from '../containers/footer';
 
-import { Container, Row, Col } from 'react-bootstrap';
 
 function KategoriVego() {
     return <div>
 
 
-        <div className="container">
-            <div className="row">
+        <Container>
+            <Row>
             <h3 className="kategori-titel">Veckans utvalda vegetariska recept</h3>
                 
-                    <div className="col">
+                    <Col>
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
                                 <div className="kategori-text">Vegotacos med blomkål, refried beans, ris och fetaost<a href="#"></a></div>
@@ -32,7 +35,7 @@ function KategoriVego() {
                                 <div className="kategori-number">16</div>
                             </div>
                         </div>
-                    </div>
+                        </Col>
                     <div className="col">
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
@@ -57,7 +60,7 @@ function KategoriVego() {
                             </div>
                         </div>
                     </div>
-                    </div>
+                    </Row>
                     <div className="row">
                         <div className="col">
                             <div className="rosa-ruta-vego1">
@@ -97,7 +100,7 @@ function KategoriVego() {
                         </div>
                         </div>
                     
-                </div>
+                        </Container>
         <FooterContainer/>
            </div>
        

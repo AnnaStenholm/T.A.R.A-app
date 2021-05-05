@@ -14,15 +14,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments} from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 function KategoriFisk() {
     return <div>
 
-        <div className="container">
-            <div className="row">
+        <Container>
+            <Row>
                 <h3 className="kategori-titel">Veckans utvalda fisk recept</h3>
 
-                <div className="col">
+               <Col>
                     <div className="rosa-ruta-fisk">
                         <div className="kategori-content">
                             <div className="kategori-text">Enkel fisk- och skaldjurssoppa med vitlöksaioli<a href="#"></a></div>
@@ -33,7 +32,7 @@ function KategoriFisk() {
                             <div className="kategori-number">14</div>
                         </div>
                     </div>
-                </div>
+                    </Col>
                 <div className="col">
                     <div className="rosa-ruta-fisk">
                         <div className="kategori-content">
@@ -59,7 +58,7 @@ function KategoriFisk() {
                     </div>
                 </div>
                 
-            </div>
+                </Row>
             <div className="row">
                 <div className="col">
                     <div className="rosa-ruta-fisk1">
@@ -101,7 +100,7 @@ function KategoriFisk() {
                
             </div>
 
-        </div>
+            </Container>
         <FooterContainer />
     </div>
 }
