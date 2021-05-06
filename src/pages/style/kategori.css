@@ -1,34 +1,7 @@
-/*KATEGORI VEGO*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-.container-rosa{
-    margin:auto;
-}
-
-.kategori-titel{
-    margin: 20px 0px 0px 0px;
-    color: #262b2f;
-}
-
-.rosa-ruta-vego{
-    float:left;
-    margin: 60px 0px 15px 0px;
-    width: 237px;
-    height: 320px;
-    background-color: #edc5ba;
-    top: 574px;
-    border-radius: 54px;
-}
-
-.rosa-ruta-vego1{
-    float:left;
-    margin: 60px 0px 80px 0px;
-    width: 237px;
-    height: 320px;
-    background-color: #edc5ba;
-    top: 574px;
-    border-radius: 54px;
-}
+/*KATEGORI*/
 
 
 .kategori-content{
@@ -87,6 +60,37 @@
     width: 20px;
     float: right;
 }
+
+.container-rosa{
+    margin:auto;
+}
+
+.kategori-titel{
+    margin: 20px 0px 0px 0px;
+    color: #262b2f;
+}
+/*KATEGORI VEGO*/
+
+.rosa-ruta-vego{
+    float:left;
+    margin: 60px 0px 15px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #edc5ba;
+    top: 574px;
+    border-radius: 54px;
+}
+
+.rosa-ruta-vego1{
+    float:left;
+    margin: 60px 0px 80px 0px;
+    width: 237px;
+    height: 320px;
+    background-color: #edc5ba;
+    top: 574px;
+    border-radius: 54px;
+}
+
 
 /* KATEGORI KÖTT*/
 

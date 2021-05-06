@@ -4,6 +4,7 @@ import KategoriVego from './pages/KategoriVego';
 import KategoriKott from './pages/KategoriKott';
 import KategoriFisk from './pages/KategoriFisk';
 import PostPage from './pages/PostPage';
+import UserRecipe from './pages/UserRecipe';
 import AllRecipes from './components/AllRecipes';
 import CommentDiv from './components/CommentDiv';
 import Gryta from './components/Ikoner/Gryta';
@@ -34,6 +35,10 @@ const App = (props) => <Router>
 
     <Route path="/kategori/fisk">
       <KategoriFisk/>
+    </Route>
+
+    <Route path="/anv/recept">
+      <UserRecipe/>
     </Route>
 
 //Rebecka

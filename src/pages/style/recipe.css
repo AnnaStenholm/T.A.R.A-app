@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.user-topbox{
+    width: 1156px;
+    height: 763px;
+
+}
+
+.fish-title{
+    font-family: "Roboto", "sans-serif";
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    color: #304227;
+}
+
+.fish-img img{
+    width: 542.66px;
+    height: 510px;
+    margin: 20px 200px 20px 320px;
+    border-radius: 14.8472px;
+}
+
+.user-bottombox{
+
+    width: 1156px;
+    height: 1300px;
+
+}
+
+.user-ingr-box{
+    width: 416px;
+    height: 1200px;
+    float: left;
+    background-color: #F8EEE2;
+}
+.user-title{
+    font-size: 30px;
+    font-weight: regular;
+    color: #51321D;
+    margin: 10px 20px 20px 130px
+}
+
+.user-ingr ul{
+    margin-top: 20px;
+    border: 1px solid #E2E2E2;
+    align-items: center;
+    border-radius: 14px;
+    padding:20px;
+}
+
+li{
+    list-style: none;
+    color: #51321D;
+    text-align: center;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.sub-ingr{
+    color: #51321D;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.portion{
+    width:150px;
+    height: 27px;
+    border-radius: 20px;
+    border: 1px solid #51321D;
+    text-align: center;
+    margin: 30px 0px 0px 130px;
+    color: #51321D;
+}
+
+.user-do-box{
+    width: 678px;
+    height:972px;
+    float: right;
+    margin-bottom: 50px;
+    background-color: #F8EEE2;
+}
