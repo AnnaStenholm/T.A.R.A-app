@@ -1,0 +1,96 @@
+/*STARTSIDA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+.startsida-titel{
+    font-family: "Roboto", "sans-serif";
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+    color: #51321D;
+    margin-bottom: 40px;
+}
+
+.beige-ruta{
+    display: grid;
+    margin-top: 20px;
+    height: 195px;
+    width: 256px;
+    border-radius: 20px;    
+    background-color: rgba(165, 101, 83, 0.5);
+}
+
+.beskrivning{
+    Width: 203px;
+    Height: 60px;
+    Top: 741px;
+    margin-left: 15px;
+    color: #304227;
+    
+}
+
+.text{
+    font-family: "Roboto", "sans-serif";
+    color: #304227;
+    height: 24px;
+    width: 212px;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+
+.text a{
+    text-decoration: none;
+}
+
+.startsida-img img{
+    height: 154px;
+    width: 256px;
+    left: 34px;
+    top: 527px;
+    border-radius: 20px;    
+}
+
+div.kategori{
+    Width: 203px;
+    Height: 60px;
+    color: #304227;
+}
+
+div.antal-kommentar{
+    margin: 8px -50px 0px 0px;
+    width: 20px;
+    float: right;
+}
+
+.ruta{
+    display: grid;
+    margin-top: 20px;
+    height: 195px;
+    width: 256px;
+    border-radius: 20px;    
+    background-color: #CF9C8E;
+}
+
+.icons img{
+    width: 79px;
+    height: 115px;
+    margin-left: 150px;
+    margin-bottom: 45px;
+}
+
+.box-titel{
+    font-family: "Roboto", "sans-serif";
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.ruta a{
+    text-decoration: none;
+}

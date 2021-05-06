@@ -8,6 +8,7 @@ import UserRecipe from './pages/UserRecipe';
 import AllRecipes from './components/AllRecipes';
 import CommentDiv from './components/CommentDiv';
 import Gryta from './components/Ikoner/Gryta';
+import Navbar from './components/navbar';
 
 import { 
   BrowserRouter as Router, 
@@ -17,6 +18,7 @@ import {
 
 
 const App = (props) => <Router>
+  <Navbar />
   <Switch>
 
 //Tibah 
