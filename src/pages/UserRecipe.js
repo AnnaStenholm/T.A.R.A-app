@@ -50,11 +50,11 @@ const UserReceipe = () => {
                     <div className="user-do-box">
                         <div className="user-title">Gör så här</div>
                         <ul className="todo">
-                            <li>1. Skala och skiva rödlöken. Koka upp vatten och blanda med socker, ättika och salt. Lägg ner lökringarna i det heta vattnet och låt dem ligga och dra i cirka en timme. Slå av lagen innan servering.</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><p>1. Skala och skiva rödlöken. Koka upp vatten och blanda med socker, ättika och salt. Lägg ner lökringarna i det heta vattnet och låt dem ligga och dra i cirka en timme. Slå av lagen innan servering.</p></li>
+                            <li><p>2. Tina fisken och torka av den ordentligt med hushållspapper. Skär fisken till mindre bitar. Vispa ihop ägg med vetemjöl, bakpulver, flingsalt och vatten. Hetta upp en stekpanna med cirka en centimeter djup rapsolja. Doppa varje fiskbit i smeten och lägg över i den varma oljan. Fritera fisken på båda sidor så den får ljus färg och låt den sedan rinna av på ett hushållspapper. Ställ pannan åt sidan när fisken är friterad. När dte är dags att äta, hetta upp oljan igen och fritera klart fiskbitarna så de får en frasig yta och gyllene färg.</p></li>
+                            <li><p>3. Blanda kvartar om tomat, hackad schalottenlök, en fin hackad vitlöksklyfta och klippt koriander. Smaka av med lime, salt och chilipulver.</p></li>
+                            <li><p>4. Hacka kapris och smörgåsgurka. Blanda med creme fraiche och majonnäs i en skål. Smaka av med kryddor.</p></li>
+                            <li><p>5. Servera allt med tortillabröd, jalpeños, chipotlepasta, doritos och majs. Dryckestips är den mexikanska ölen Sol eller en torr riesling.</p></li>
                         </ul>
                     </div>
                 </div>

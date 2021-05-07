@@ -27,78 +27,78 @@ function KategoriVego() {
                     <Col>
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
-                                <div className="kategori-text">Vegotacos med blomkål, refried beans, ris och fetaost<a href="#"></a></div>
-                                <div className="kategori-img"><img src={vegetacos} alt="Vegotacos med blomkål, refried beans, ris och fetaost"/><a href="#">
-                                </a></div>
-                                <div className="kategori"><i>Vegetariskt</i></div>
-                                <i className="far fa-comments"></i>
+                                <div className="kategori-text">Vegotacos med blomkål, refried beans, ris och fetaost</div>
+                                <div className="kategori-img"><img src={vegetacos} alt="Vegotacos med blomkål, refried beans, ris och fetaost"/>
+                                </div>
+                                <div className="kategori-val"><i>Vegetariskt</i></div>
+                                <FontAwesomeIcon icon={ faComments} />
                                 <div className="kategori-number">16</div>
                             </div>
                         </div>
                         </Col>
-                    <div className="col">
+                    <Col>
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
-                                <div className="kategori-text">Vegetarisk aubergingratäng<a href="#"></a></div>
-                                <div className="kategori-img"><img src={aubergin} alt="Vegetarisk aubergingratäng"/><a href="#">
-                                </a></div>
-                                <div className="kategori"><i>Vegetariskt</i></div>
-                                <i className="far fa-comments"></i>
+                                <div className="kategori-text">Vegetarisk aubergingratäng</div>
+                                <div className="kategori-img"><img src={aubergin} alt="Vegetarisk aubergingratäng"/>
+                                </div>
+                                <div className="kategori-val"><i>Vegetariskt</i></div>
+                                <FontAwesomeIcon icon={ faComments} />
                                 <div className="kategori-number">22</div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col">
+                    </Col>
+                    <Col>
                         <div className="rosa-ruta-vego">
                             <div className="kategori-content">
-                                <div className="kategori-text">Vårrullar med limemarinerad lök och hoisinsås<a href="#"></a></div>
-                                <div className="kategori-img"><img  src={varrullar} alt="Vårrullar med limemarinerad lök och hoisinsås"/><a href="#">
-                                </a></div>
-                                <div className="kategori"><i>Vegetariskt</i></div>
-                                <i className="far fa-comments"></i>
+                                <div className="kategori-text">Vårrullar med limemarinerad lök och hoisinsås</div>
+                                <div className="kategori-img"><img  src={varrullar} alt="Vårrullar med limemarinerad lök och hoisinsås"/>
+                                </div>
+                                <div className="kategori-val"><i>Vegetariskt</i></div>
+                                <FontAwesomeIcon icon={ faComments} />
                                 <div className="kategori-number">12</div>
                             </div>
                         </div>
-                    </div>
+                        </Col>
                     </Row>
-                    <div className="row">
-                        <div className="col">
+                    <Row>
+                        <Col>
                             <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
-                                    <div className="kategori-text">Tomatbruschetta<a href="#"></a></div>
-                                    <div className="kategori-img1"><img src={tomatbruschetta} alt="Tomatbruschetta"/><a href="#">
-                                    </a></div>
-                                    <div className="kategori"><i>Vegetariskt</i></div>
-                                    <i className="far fa-comments"></i>
+                                    <div className="kategori-text">Tomatbruschetta</div>
+                                    <div className="kategori-img1"><img src={tomatbruschetta} alt="Tomatbruschetta"/>
+                                    </div>
+                                    <div className="kategori-val"><i>Vegetariskt</i></div>
+                                    <FontAwesomeIcon icon={ faComments} />
                                     <div className="kategori-number">15</div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col">
+                            </Col>
+                        <Col>
                             <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
-                                    <div className="kategori-text">Pesto genovese<a href="#"></a></div>
-                                    <div className="kategori-img"><img src={pesto} alt="Pesto genovese"/><a href="#">
-                                    </a></div>
-                                    <div className="kategori"><i>Vegetariskt</i></div>
-                                    <i className="far fa-comments"></i>
+                                    <div className="kategori-text">Pesto genovese</div>
+                                    <div className="kategori-img"><img src={pesto} alt="Pesto genovese"/>
+                                    </div>
+                                    <div className="kategori-val"><i>Vegetariskt</i></div>
+                                    <FontAwesomeIcon icon={ faComments} />
                                     <div className="kategori-number">13</div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col">
+                            </Col>
+                        <Col>
                             <div className="rosa-ruta-vego1">
                                 <div className="kategori-content">
-                                    <div className="kategori-text">Risotto milanese</div><a href="#"></a>
-                                    <div className="kategori-img"><img src={risotto} alt="Risotto milanese"/><a href="#">
-                                    </a></div>
-                                    <div className="kategori"><i>Vegetariskt</i></div>
-                                    <i className="far fa-comments"></i>
+                                    <div className="kategori-text">Risotto milanese</div>
+                                    <div className="kategori-img"><img src={risotto} alt="Risotto milanese"/>
+                                    </div>
+                                    <div className="kategori-val"><i>Vegetariskt</i></div>
+                                    <FontAwesomeIcon icon={ faComments} />
                                     <div className="kategori-number">19</div>
                                 </div>
                             </div>
-                        </div>
-                        </div>
+                            </Col>
+                        </Row>
                     
                         </Container>
         <FooterContainer/>

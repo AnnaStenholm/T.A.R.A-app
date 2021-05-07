@@ -25,78 +25,78 @@ function KategoriKott() {
                 <Col>
                     <div className="rosa-ruta-kott">
                         <div className="kategori-content">
-                            <div className="kategori-text">Spagetti bolognese<a href="#"></a></div>
-                            <div className="kategori-img"><img src={spaghetti_bolognese} alt="Spaghetti Bolognese"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Kött</i></div>
+                            <div className="kategori-text">Spagetti bolognese</div>
+                            <div className="kategori-img"><img src={spaghetti_bolognese} alt="Spaghetti Bolognese"/>
+                            </div>
+                            <div className="kategori-val"><i>Kött</i></div>
                             <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">13</div>
                         </div>
                     </div>
                     </Col>
-                <div className="col">
+                <Col>
                     <div className="rosa-ruta-kott">
                         <div className="kategori-content">
-                            <div className="kategori-text">Grillad entrecote med bearnaisesås<a href="#"></a></div>
-                            <div className="kategori-img"><img src={biff_bea1} alt="entrecote med bea"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Kött</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Grillad entrecote med bearnaisesås</div>
+                            <div className="kategori-img"><img src={biff_bea1} alt="entrecote med bea"/>
+                           </div>
+                            <div className="kategori-val"><i>Kött</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">20</div>
                         </div>
                     </div>
-                </div>
-                <div className="col">
+                    </Col>
+                <Col>
                     <div className="rosa-ruta-kott">
                         <div className="kategori-content">
-                            <div className="kategori-text">Côte de boeuf med köttrub<a href="#"></a></div>
-                            <div className="kategori-img1"><img src={coteboef} alt="Côte de boeuf med köttrub"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Kött</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Côte de boeuf med köttrub</div>
+                            <div className="kategori-img1"><img src={coteboef} alt="Côte de boeuf med köttrub"/>
+                            </div>
+                            <div className="kategori-val"><i>Kött</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">10</div>
                         </div>
                     </div>
-                </div>
+                    </Col>
                 </Row>
-            <div className="row">
-                <div className="col">
+            <Row>
+                <Col>
                     <div className="rosa-ruta-kott1">
                         <div className="kategori-content">
-                            <div className="kategori-text">Oxfilé provencale<a href="#"></a></div>
-                            <div className="kategori-img1"><img src={oxfile} alt="Oxfilé provencale"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Kött</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Oxfilé provencale</div>
+                            <div className="kategori-img1"><img src={oxfile} alt="Oxfilé provencale"/>
+                            </div>
+                            <div className="kategori-val"><i>Kött</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">19</div>
                         </div>
                     </div>
-                </div>
-                <div className="col">
+                    </Col>
+                <Col>
                     <div className="rosa-ruta-kott1">
                         <div className="kategori-content">
-                            <div className="kategori-text">Bulgogi<a href="#"></a></div>
-                            <div className="kategori-img"><img src={bulgogi} alt="Bulgogi"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Kött</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Bulgogi</div>
+                            <div className="kategori-img"><img src={bulgogi} alt="Bulgogi"/>
+                            </div>
+                            <div className="kategori-val"><i>Kött</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">11</div>
                         </div>
                     </div>
-                </div>
-                <div className="col">
+                    </Col>
+                <Col>
                     <div className="rosa-ruta-kott1">
                         <div className="kategori-content">
-                            <div className="kategori-text">Smashade burgare på högrev</div><a href="#"></a>
-                            <div className="kategori-img1"><img src={burgare} alt="Smashade burgare på högrev"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Kött</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Smashade burgare på högrev</div>
+                            <div className="kategori-img1"><img src={burgare} alt="Smashade burgare på högrev"/>
+                            </div>
+                            <div className="kategori-val"><i>Kött</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">12</div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
 
             </Container>
         <FooterContainer />

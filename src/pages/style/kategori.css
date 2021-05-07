@@ -10,7 +10,6 @@
 }
 
 .kategori-text{
-    color: #304227;
     font-weight: bold;
     font-style: normal;
     line-height: 20.7px;
@@ -21,7 +20,11 @@
 
 .kategori-text a{
     text-decoration: none;
-    
+    color: #304227;
+}
+
+a:hover{
+     background-color: #F0DBC1;
 }
 
 .kategori-img img{
@@ -38,7 +41,7 @@
     margin: 30px 0px 35px -10px;
 }
 
-.kategori{
+.kategori-val{
    
     margin: 5px 0px 0px 8px;
     color: #304227;
