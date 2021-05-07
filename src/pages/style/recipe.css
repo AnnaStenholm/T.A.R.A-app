@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.user-topbox{
-    width: 1156px;
-    height: 763px;
-
+* {
+box-sizing:border-box;
 }
+
+
 
 .fish-title{
     font-family: "Roboto", "sans-serif";
@@ -16,23 +16,19 @@
 .fish-img img{
     width: 542.66px;
     height: 510px;
-    margin: 20px 200px 20px 320px;
     border-radius: 14.8472px;
-}
-
-.user-bottombox{
-
-    width: 1156px;
-    height: 1300px;
-
+    float:left;
+    margin-top: 40px;
 }
 
 .user-ingr-box{
     width: 416px;
     height: 1200px;
-    float: left;
+    float: right;
     background-color: #F8EEE2;
+    margin: 40px 120px 0px 0px;
 }
+
 .user-title{
     font-size: 30px;
     font-weight: regular;
@@ -72,10 +68,11 @@ li{
     color: #51321D;
 }
 
+
 .user-do-box{
     width: 678px;
-    height:972px;
+    height:565px;
     float: right;
-    margin-bottom: 50px;
+    margin: 20px 78px 0px 0px;
     background-color: #F8EEE2;
 }

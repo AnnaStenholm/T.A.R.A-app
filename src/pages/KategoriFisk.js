@@ -10,7 +10,6 @@ import fisksas from '../bilder/skolans-fisksas.jpg';
 import gravlax from '../bilder/gravlaxtartar.jpeg';
 
 import {  Link } from "react-router-dom";
-import { FooterContainer } from '../containers/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments} from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -97,12 +96,8 @@ function KategoriFisk() {
                         </div>
                     </div>
                     </Col>
-               
-               
                 </Row>
-
             </Container>
-        <FooterContainer />
     </div>
 }
 

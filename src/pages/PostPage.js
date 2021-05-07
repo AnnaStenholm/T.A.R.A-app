@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {FooterContainer} from '../containers/footer';
+
 import VegoRecipeForm from '../components/forms/VegoRecipeForm';
 import FiskRecipeForm from '../components/forms/FiskRecipeForm';
 import KottRecipeForm from '../components/forms/KottRecipeForm';
@@ -11,7 +11,6 @@ const PostPage = () => {
     return (
     <>  
         <PostForm />
-        <FooterContainer/>
     </>
 );
     

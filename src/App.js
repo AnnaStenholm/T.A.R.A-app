@@ -9,7 +9,7 @@ import AllRecipes from './components/AllRecipes';
 import CommentDiv from './components/CommentDiv';
 import Gryta from './components/Ikoner/Gryta';
 import Navbar from './components/navbar';
-
+import { FooterContainer } from './containers/footer';
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -63,7 +63,9 @@ const App = (props) => <Router>
 
 
   </Switch>
+  <FooterContainer />
 </Router>
+
 
 export default App;
 

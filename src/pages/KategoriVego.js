@@ -13,8 +13,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments} from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import { FooterContainer } from '../containers/footer';
-
 
 function KategoriVego() {
     return <div>
@@ -101,7 +99,7 @@ function KategoriVego() {
                         </Row>
                     
                         </Container>
-        <FooterContainer/>
+        
            </div>
        
     

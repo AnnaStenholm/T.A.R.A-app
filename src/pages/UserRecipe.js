@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import './style/recipe.css';
 import fishtacos from '../bilder/fishtacos.jpeg';
-import { FooterContainer } from '../containers/footer';
+
 
 
 const UserReceipe = () => {
@@ -13,8 +13,7 @@ const UserReceipe = () => {
                 <h1 className="fish-title">FISH TACOS MED<br></br> PICKLAD RÖDLÖK OCH<br></br>TOMATSALSA</h1>
                 <div className="fish-img"><img src={fishtacos} alt="Fish-tacos med picklad rödlök och tomatsalsa" />
                 </div>
-                <div className="user-bottombox">
-                    <div className="user-ingr-box">
+                <div className="user-ingr-box">
                         <div className="user-title">Ingredienser</div>
                             <div className="portion">4 port</div>
                         <ul className="user-ingr">
@@ -58,11 +57,7 @@ const UserReceipe = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
-
-
         </Container>
-        <FooterContainer />
         </div>
     )
 }
