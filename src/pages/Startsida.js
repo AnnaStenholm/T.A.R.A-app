@@ -1,11 +1,9 @@
-
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './style/startsida.css';
-
 import tomatbruschetta from '../bilder/tomatbruschetta.jpg';
 import skolans_fisksas from '../bilder/skolans-fisksas.jpg';
 import oxfile from '../bilder/oxfile.jpeg';
-
 import carrot from '../components/Ikoner/carrot.png';
 import meat from '../components/Ikoner/meat.png';
 import fish from '../components/Ikoner/fish.png';
@@ -67,7 +65,7 @@ function Startsida() {
             <h3 className="startsida-titel">Kategorier</h3>
                 <Col>
                     <div className="ruta">
-                    <a href="#"><h3 className="box-titel">Vego</h3></a>
+                    <Link to="/kategori/vego"><h3 className="boxkategori-titel">Vego</h3></Link>
                     <div className="icons">
                     <img src={carrot} alt="vego"/>
                 </div>
@@ -75,7 +73,7 @@ function Startsida() {
                     </Col>
                 <Col>
                     <div className="ruta">
-                    <a href="#"><h3 className="box-titel">Fisk</h3></a>
+                    <Link to="/kategori/fisk"><h3 className="boxkategori-titel">Fisk</h3></Link>
                     <div className="icons">
                     <img src={fish} alt="vego"/>
                 </div>
@@ -83,7 +81,7 @@ function Startsida() {
                     </Col>
                 <Col>
                     <div className="ruta">
-                    <a href="#"><h3 className="box-titel">Kött</h3></a>
+                    <Link to="/kategori/kott"><h3 className="boxkategori-titel">Kött</h3></Link>
                     <div className="icons">
                     <img src={meat} alt="vego"/>
                 </div>
