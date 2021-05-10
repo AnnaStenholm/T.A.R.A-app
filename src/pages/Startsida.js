@@ -5,7 +5,7 @@ import './style/startsida.css';
 import tomatbruschetta from '../bilder/tomatbruschetta.jpg';
 import skolans_fisksas from '../bilder/skolans-fisksas.jpg';
 import oxfile from '../bilder/oxfile.jpeg';
-import { FooterContainer } from '../containers/footer';
+
 import carrot from '../components/Ikoner/carrot.png';
 import meat from '../components/Ikoner/meat.png';
 import fish from '../components/Ikoner/fish.png';
@@ -92,7 +92,7 @@ function Startsida() {
                 </Row>
             </Container>
         
-        <FooterContainer />
+        
     </div>
 }
 

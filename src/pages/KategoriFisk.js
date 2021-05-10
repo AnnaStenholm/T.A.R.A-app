@@ -9,7 +9,7 @@ import fishtacos from '../bilder/fishtacos.jpeg';
 import fisksas from '../bilder/skolans-fisksas.jpg';
 import gravlax from '../bilder/gravlaxtartar.jpeg';
 
-import { FooterContainer } from '../containers/footer';
+import {  Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments} from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -24,84 +24,80 @@ function KategoriFisk() {
                <Col>
                     <div className="rosa-ruta-fisk">
                         <div className="kategori-content">
-                            <div className="kategori-text">Enkel fisk- och skaldjurssoppa med vitlöksaioli<a href="#"></a></div>
-                            <div className="kategori-img"><img src={skaldjur} alt="Enkel fisk- och skaldjurssoppa med vitlöksaioli"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Fisk</i></div>
+                            <div className="kategori-text">Enkel fisk- och skaldjurssoppa med vitlöksaioli</div>
+                            <div className="kategori-img"><img src={skaldjur} alt="Enkel fisk- och skaldjurssoppa med vitlöksaioli"/>
+                            </div>
+                            <div className="kategori-val"><i>Fisk</i></div>
                             <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">14</div>
                         </div>
                     </div>
                     </Col>
-                <div className="col">
+               <Col>
                     <div className="rosa-ruta-fisk">
                         <div className="kategori-content">
-                            <div className="kategori-text">Lax i ugn med sojastekt broccoli<a href="#"></a></div>
-                            <div className="kategori-img"><img src={lax} alt="Lax i ugn med sojastekt broccoli"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Fisk</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Lax i ugn med sojastekt broccoli</div>
+                            <div className="kategori-img"><img src={lax} alt="Lax i ugn med sojastekt broccoli"/>
+                            </div>
+                            <div className="kategori-val"><i>Fisk</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">24</div>
                         </div>
                     </div>
-                </div>
-                <div className="col">
+                </Col>
+                <Col>
                     <div className="rosa-ruta-fisk1">
                         <div className="kategori-content">
-                            <div className="kategori-text">Gravlaxtartar</div><a href="#"></a>
-                            <div className="kategori-img1"><img src={gravlax} alt="Gravlaxtartar"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Fisk</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Gravlaxtartar</div>
+                            <div className="kategori-img1"><img src={gravlax} alt="Gravlaxtartar"/>
+                           </div>
+                            <div className="kategori-val"><i>Fisk</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">14</div>
                         </div>
                     </div>
-                </div>
+                    </Col>
                 
                 </Row>
-            <div className="row">
-                <div className="col">
+            <Row>
+                <Col>
                     <div className="rosa-ruta-fisk1">
                         <div className="kategori-content">
-                            <div className="kategori-text">Fish-tacos med picklad rödlök och tomatsalsa<a href="#"></a></div>
-                            <div className="kategori-img"><img src={fishtacos} alt="Fish-tacos med picklad rödlök och tomatsalsa"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Fisk</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text"><Link to="/anv/recept">Fish-tacos med picklad rödlök och tomatsalsa</Link></div>
+                            <div className="kategori-img"><Link to="/anv/recept"><img src={fishtacos} alt="Fish-tacos med picklad rödlök och tomatsalsa"/></Link>
+                            </div>
+                            <div className="kategori-val"><i>Fisk</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">17</div>
                         </div>
                     </div>
-                </div>
-                <div className="col">
+                    </Col>
+                <Col>
                     <div className="rosa-ruta-fisk1">
                         <div className="kategori-content">
-                            <div className="kategori-text">Skolans fisksås<a href="#"></a></div>
-                            <div className="kategori-img1"><img src={fisksas} alt="Skolans fisksås"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Fisk</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Skolans fisksås</div>
+                            <div className="kategori-img1"><img src={fisksas} alt="Skolans fisksås"/>
+                            </div>
+                            <div className="kategori-val"><i>Fisk</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">15</div>
                         </div>
                     </div>
-                </div>
-                <div className="col">
+                    </Col>
+                <Col>
                     <div className="rosa-ruta-fisk">
                         <div className="kategori-content">
-                            <div className="kategori-text">Maki-sushi<a href="#"></a></div>
-                            <div className="kategori-img"><img src={sushi} alt="Maki-sushi"/><a href="#">
-                            </a></div>
-                            <div className="kategori"><i>Fisk</i></div>
-                            <i className="far fa-comments"></i>
+                            <div className="kategori-text">Maki-sushi</div>
+                            <div className="kategori-img"><img src={sushi} alt="Maki-sushi"/>
+                            </div>
+                            <div className="kategori-val"><i>Fisk</i></div>
+                            <FontAwesomeIcon icon={ faComments} />
                             <div className="kategori-number">8</div>
                         </div>
                     </div>
-                </div>
-               
-               
-            </div>
-
+                    </Col>
+                </Row>
             </Container>
-        <FooterContainer />
     </div>
 }
 
