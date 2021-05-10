@@ -53,15 +53,23 @@
     border-radius: 20px;    
 }
 
+.kategoriVal{
+   margin-top: 75px;
+   margin-left: 20px;
+   font-size: small;
+   font-style: italic;
+   color: #304227;
+}
+
 div.antal-kommentar{
-    margin: 8px -50px 0px 0px;
     width: 20px;
+    margin-right: 20px;
     float: right;
-    margin-top: 70px;
+    margin-top: -25px;
 }
 
 i.fa-comments{
-    margin-top: 75px;
+    margin-top: -20px;
 }
 
 .ruta{

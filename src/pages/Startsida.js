@@ -23,6 +23,7 @@ function Startsida() {
                             italienska och består av bröd, olja,
                             vitlök och salt. Färsk tomat och
                             basilika är den klassiska smaken.</div>
+                            <Link to="/kategori/vego"><div className="kategoriVal"><i>Vego</i></div></Link>
                             <i className="far fa-comments"></i>
                             <div className="antal-kommentar">15</div>
                         </div>
@@ -37,6 +38,7 @@ function Startsida() {
                             till nystekt panerad fisk. Den blir
                             bara godare av att stå, så gör den
                             gärna dagen innan.</div>
+                            <Link to="/kategori/fisk"><div className="kategoriVal"><i>Fisk</i></div></Link>
                             <i className="far fa-comments"></i>
                             <div className="antal-kommentar">43</div>
                         </div>
@@ -52,6 +54,7 @@ function Startsida() {
                             förbereda dagen innan och bara
                             värma med vitlökssmöret precis
                             innan servering.</div>
+                            <Link to="/kategori/kott"><div className="kategoriVal"><i>Kött</i></div></Link>
                             <i className="far fa-comments"></i>
                             <div className="antal-kommentar">32</div>
                         </div>
