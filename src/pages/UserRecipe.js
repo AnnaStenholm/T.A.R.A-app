@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import { Container, Row, Col } from 'react-bootstrap';
 import './style/recipe.css';
 import fishtacos from '../bilder/fishtacos.jpeg';
 
@@ -9,10 +9,13 @@ const UserReceipe = () => {
     return (
     <div>
         <Container>
-            <div className="user-topbox">
+            <Row>
                 <h1 className="fish-title">FISH TACOS MED<br></br> PICKLAD RÖDLÖK OCH<br></br>TOMATSALSA</h1>
+                <Col>
                 <div className="fish-img"><img src={fishtacos} alt="Fish-tacos med picklad rödlök och tomatsalsa" />
                 </div>
+                </Col>
+                <Col>
                 <div className="user-ingr-box">
                         <div className="user-title">Ingredienser</div>
                             <div className="portion">4 port</div>
@@ -46,6 +49,9 @@ const UserReceipe = () => {
                             
                         </ul>
                     </div>
+                    </Col>
+                    </Row>
+                    <Row>
                     <div className="user-do-box">
                         <div className="user-title">Gör så här</div>
                         <ul className="todo">
@@ -56,7 +62,7 @@ const UserReceipe = () => {
                             <li><p>5. Servera allt med tortillabröd, jalpeños, chipotlepasta, doritos och majs. Dryckestips är den mexikanska ölen Sol eller en torr riesling.</p></li>
                         </ul>
                     </div>
-                </div>
+                    </Row>
         </Container>
         </div>
     )
