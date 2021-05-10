@@ -53,16 +53,15 @@
     border-radius: 20px;    
 }
 
-div.kategori{
-    Width: 203px;
-    Height: 60px;
-    color: #304227;
-}
-
 div.antal-kommentar{
     margin: 8px -50px 0px 0px;
     width: 20px;
     float: right;
+    margin-top: 70px;
+}
+
+i.fa-comments{
+    margin-top: 75px;
 }
 
 .ruta{
@@ -94,3 +93,5 @@ div.antal-kommentar{
 .ruta a{
     text-decoration: none;
 }
+
+

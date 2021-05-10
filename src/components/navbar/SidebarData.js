@@ -11,6 +11,12 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
+        title: 'ALLA RECEPT',
+        path: '/recept/:kategori',
+        icon: <FaIcons.FaUtensils/>,
+        cName: 'nav-text'
+    },
+    {
         title: 'KÖTT',
         path: '/kategori/kott',
         icon: <GiIcons.GiMeat/>,
@@ -26,6 +32,12 @@ export const SidebarData = [
         title: 'VEGO',
         path: '/kategori/vego',
         icon: <FaIcons.FaCarrot/>,
+        cName: 'nav-text'
+    },
+    {
+        title: 'LÄGG TILL RECEPT',
+        path: '/postpage',
+        icon:<FaIcons.FaPlus/>,
         cName: 'nav-text'
     },
     {
