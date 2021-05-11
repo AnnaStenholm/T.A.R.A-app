@@ -17,7 +17,9 @@ import {
   Link } from "react-router-dom";
 
 
-const App = (props) => <Router>
+const App = (props) => 
+
+<Router>
   <Navbar />
   <Switch>
 

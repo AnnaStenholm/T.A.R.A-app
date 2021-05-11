@@ -7,7 +7,11 @@ import { Container, Row, Col } from 'react-bootstrap'; //3.1K (gzipped: 1.3K)
 const CommentLink = ({recipeId}) => {
 
 return <>
-<Link to={`/recept/${recipeId}/kommentarer`} style={{color: '#304227'}}><FontAwesomeIcon icon={ faComments } style={{ float:'left', fontSize: '2em', marginTop: '0px'}}></FontAwesomeIcon></Link>
+<Link to={`/recept/${recipeId}/kommentarer`} style={{color: '#304227'}}>
+<FontAwesomeIcon 
+icon={ faComments } style={{ float:'left', fontSize: '2em', marginTop: '0px'}}>
+</FontAwesomeIcon>
+</Link>
 </>
 };
 

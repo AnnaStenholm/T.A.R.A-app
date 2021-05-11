@@ -1,17 +1,15 @@
-import React from 'react';
+import React, { useState }from 'react';
 import { useParams } from 'react-router-dom';
 import CategoryButtons from './CategoryButtons';
 import RecipeDiv from './RecipeDiv';
 import Gryta from './Ikoner/Gryta';
-import { Container, Row, Col } from 'react-bootstrap'; //3.1K (gzipped: 1.3K)
+ 
 
-
-const AllRecipes = ({isLoading}) => {
+const AllRecipes = () => {
     const params = useParams();
+    
 
-    return isLoading ? (
-        <Gryta />
-    ) : (
+    return (
     <> 
     <div className= "container" >
         <div className="row">
@@ -23,7 +21,7 @@ const AllRecipes = ({isLoading}) => {
             <RecipeDiv kategori={params.kategori}></RecipeDiv>
     </div>
     </>
-    );
-    };
+    
+    )};
 
 export default AllRecipes;

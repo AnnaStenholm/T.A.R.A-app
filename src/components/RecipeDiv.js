@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import CommentLink from './CommentLink';
-
+import Gryta from './Ikoner/Gryta';
+ 
 
 import PostLike from './PostLike';
 import { loadRecipeData } from '.././redux/categorySlice';
@@ -36,16 +37,9 @@ const RecipeDiv = ({kategori}) => {
 
     
 
-    if (!categoryId) {
-
-        return <p><strong>Kategorin hittades inte</strong></p>
-
-    } else {
-
     return (
     <> 
-   
-    
+
         {
         recipeData.map(recipe => 
         <div key={recipe._id} className="card" style={{ marginBottom: '2em' }}>
@@ -55,8 +49,12 @@ const RecipeDiv = ({kategori}) => {
                 <p className="card-text">{recipe.content}</p>
             
         <div>
-            <div style={{ float:'left', marginRight: '10px'}}>{recipe.likes.length}</div><PostLike likeId={recipe._id}/>
-            <div style={{ float:'left', marginRight: '10px'}}>{recipe.comments.length}</div><CommentLink recipeId={recipe._id} />
+            <div style={{ float:'left', marginRight: '10px'}}>
+                {recipe.likes.length}</div>
+                <PostLike likeId={recipe._id}/>
+            <div style={{ float:'left', marginRight: '10px'}}>
+                {recipe.comments.length}</div>
+                <CommentLink recipeId={recipe._id} recipeTitle={recipe.title} />
         </div>
 
 
@@ -68,6 +66,6 @@ const RecipeDiv = ({kategori}) => {
 
     );
     }
-};
+;
  
 export default RecipeDiv;
