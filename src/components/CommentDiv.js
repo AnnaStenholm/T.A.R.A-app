@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //6.4K (gzippe
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'; //945 (gzipped: 586)
 import { useDispatch, useSelector } from 'react-redux';
 import { loadCommentData, postComment, setCommentTitle, setCommentContent } from '.././redux/recipeSlice';
+import PostLike from './PostLike';
 // Add this in your component file
 require('react-dom');
 window.React2 = require('react');
@@ -32,28 +33,59 @@ const CommentDiv = ({recipeId, recipeTitle}) => {
     
     return (
     <> 
-        <h3>Kommentera {recipeTitle}</h3>
+    <div>
+     <div className= "container" >
+        <div className="row">
+
+        <h1 className="text-center">Skriv en kommentar</h1>
+
+<div class="form-group">
+
+    <label>Titel</label>
+    <input 
+    className="form-control"
+    type='text' placeholder="Titel" 
+    onChange={(event) => dispatch(setCommentTitle(event.target.value))} 
+    value={addCommentForm.title}
+    />
+
+    <label>Kommentar</label>
+    <input 
+    className="form-control"
+    type='text' placeholder="Kommentar" 
+    onChange={(event) => dispatch(setCommentContent(event.target.value))}
+    value={addCommentForm.content}
+    />
+
+    <button className="btn btn-outline-dark"
+    style={{ marginTop: '1em', float: 'right'}}
+    onClick={() => dispatch(postComment(addCommentForm))}>
+    Publicera
+    </button>
+</div>
+
+
+        <h1 className="text-center" >Kommentarer {recipeTitle}</h1>
         {
             commentData.map(comment => (
-                <div key={comment._id}>
-                    <strong>{comment.title}</strong>
-                    <div>{comment.content}</div>
+                <div key={comment._id} className="card" style={{ marginBottom: '2em',  backgroundColor: '#F0DBC1'  }}>
+                    <div className="card-body">
+                        <h5 className="card-title">{comment.title}</h5>
+                        <p className="card-text">{comment.content}</p>
+
+                        <div>
+                            <PostLike/>
+                        </div>
+
+                    </div>
                 </div>
         ))} 
 
-                    <input 
-                    type='text' placeholder="Titel" 
-                    onChange={(event) => dispatch(setCommentTitle(event.target.value))} 
-                    value={addCommentForm.title}
-                    />
 
-                    <input type='text' placeholder="Kommentar" 
-                    onChange={(event) => dispatch(setCommentContent(event.target.value))}
-                    value={addCommentForm.content}
-                    />
-
-                <button onClick={() => dispatch(postComment(addCommentForm))}>Publicera</button>
-            
+        
+        </div>
+    </div>
+    </div>
     </>
     );
     };
