@@ -15,6 +15,10 @@ const UserReceipe = () => {
                 <div className="fish-img"><img src={fishtacos} alt="Fish-tacos med picklad rödlök och tomatsalsa" />
                 </div>
                 </Col>
+                </Row>
+                </Container>
+                <Container>
+                    <Row>
                 <Col>
                 <div className="user-ingr-box">
                         <div className="user-title">Ingredienser</div>
@@ -50,8 +54,7 @@ const UserReceipe = () => {
                         </ul>
                     </div>
                     </Col>
-                    </Row>
-                    <Row>
+                    <Col>
                     <div className="user-do-box">
                         <div className="user-title">Gör så här</div>
                         <ul className="todo">
@@ -62,8 +65,9 @@ const UserReceipe = () => {
                             <li><p>5. Servera allt med tortillabröd, jalpeños, chipotlepasta, doritos och majs. Dryckestips är den mexikanska ölen Sol eller en torr riesling.</p></li>
                         </ul>
                     </div>
+                    </Col>
                     </Row>
-        </Container>
+                    </Container>   
         </div>
     )
 }
