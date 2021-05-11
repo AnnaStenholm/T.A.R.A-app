@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import CommentLink from './CommentLink';
-import CommentDiv from './CommentDiv';
+
 
 import PostLike from './PostLike';
 import { loadRecipeData } from '.././redux/categorySlice';
