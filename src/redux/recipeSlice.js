@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { useParams } from "react-router-dom"; 
-import { useSelector } from 'react-redux';
+
 const initialState = {
     data: [], 
     //Här finns initial state

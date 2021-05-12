@@ -1,11 +1,8 @@
 import { useParams } from "react-router-dom";
 import React, { useEffect } from 'react';
-import Axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //6.4K (gzipped: 2.7K)
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'; //945 (gzipped: 586)
 import { useDispatch, useSelector } from 'react-redux';
 import { loadCommentData, postComment, setCommentTitle, setCommentContent, setCurrentId } from '.././redux/recipeSlice';
-import PostLike from './PostLike';
+import PostCommentLike from './PostCommentLike';
 
 // Add this in your component file
 require('react-dom');
@@ -77,7 +74,7 @@ const CommentDiv = ({recipeId, recipeTitle}) => {
                         <p className="card-text">{comment.content}</p>
 
                         <div>
-                            <PostLike/>
+                            <PostCommentLike recipeId={recipeId}/>
                         </div>
 
                     </div>

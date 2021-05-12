@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 import  { useEffect, useState } from 'react';
 
 
-const LikeDiv = ({likeId}) => {
+const PostCommentLike = ({likeId}) => {
 
     
     let likeUrl;
@@ -42,4 +42,4 @@ const LikeDiv = ({likeId}) => {
     }
 };
 
-export default LikeDiv;
+export default PostCommentLike;
