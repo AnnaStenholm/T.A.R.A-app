@@ -7,6 +7,7 @@ import Gryta from './Ikoner/Gryta';
 import PostLike from './PostLike';
 import { loadRecipeData } from '.././redux/categorySlice';
 
+
 const categories = {
     vego: "60828412282ecd001e7dd309",
     fisk: "608284a6282ecd001e7dd30c",
@@ -20,11 +21,8 @@ const RecipeDiv = ({kategori}) => {
     const recipeData = useSelector(state => state.category.data); 
 
     const dispatch = useDispatch();
-
-
-    if (categoryId){
     categoryUrl = `https://forum-api-jkrop.ondigitalocean.app/category/${categoryId}/thread`;
-    }
+   
 
 
     useEffect(() => {
@@ -37,7 +35,9 @@ const RecipeDiv = ({kategori}) => {
    
    
 
-
+    if (!categoryId){
+        return <h4 className="text-center">Ingen kategori vald</h4>
+    } else {
     return (
     <>
         { 
@@ -65,7 +65,7 @@ const RecipeDiv = ({kategori}) => {
     </>
 
     );
-    }
+    }}
 ;
  
 export default RecipeDiv;

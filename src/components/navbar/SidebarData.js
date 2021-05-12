@@ -12,7 +12,7 @@ export const SidebarData = [
     },
     {
         title: 'ALLA RECEPT',
-        path: '/recept/:kategori',
+        path: '/recept/:kategori' ,
         icon: <FaIcons.FaUtensils/>,
         cName: 'nav-text'
     },

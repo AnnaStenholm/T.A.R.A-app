@@ -1,8 +1,9 @@
 import React, { useState }from 'react';
 import { useParams } from 'react-router-dom';
-import CategoryButtons from './CategoryButtons';
-import RecipeDiv from './RecipeDiv';
-import Gryta from './Ikoner/Gryta';
+import CategoryButtons from '../components/CategoryButtons';
+import AddRecipeButton from '../components/AddRecipeButton';
+import RecipeDiv from '../components/RecipeDiv';
+import Gryta from '../components/Ikoner/Gryta';
  
 
 const AllRecipes = () => {
@@ -12,11 +13,15 @@ const AllRecipes = () => {
     return (
     <> 
     <div className= "container" >
+        
+            
+        
         <div className="row">
-            <h1 className="text-center">Alla {params.kategori}recept</h1>
-        </div>
-        <div className="row">
+            <AddRecipeButton/>
+            <h1 className="text-center">Alla recept</h1>
+            <h3 className="text-center">Välj kategori</h3>
             <CategoryButtons/>
+            
         </div>
             <RecipeDiv kategori={params.kategori}></RecipeDiv>
     </div>
