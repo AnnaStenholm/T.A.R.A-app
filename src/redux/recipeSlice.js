@@ -1,12 +1,15 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { useParams } from "react-router-dom"; 
+import { useSelector } from 'react-redux';
 const initialState = {
     data: [], 
     //Här finns initial state
     addCommentForm: {
       title: '',
-      content: ''
+      content: '',
+      currentId: ''
     }
+
 }; 
 
 // Den här funkar utmärkt för att ladda data 
@@ -22,14 +25,14 @@ export const loadCommentData = createAsyncThunk(
 //FUNKAR INTE
 export const postComment = createAsyncThunk(
   'recipe/postComment',
-  async (recipe, thunkAPI) => {
-    //const {id} = useParams();
-    const response = await fetch(`https://forum-api-jkrop.ondigitalocean.app/thread/60828d8d282ecd001e7dd30f/comment`, {
+  async (recipe) => {
+    const reqBody = { title: recipe.title, content: recipe.content }
+    const response = await fetch(`https://forum-api-jkrop.ondigitalocean.app/thread/${recipe.currentId}/comment`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
       },
-      body: JSON.stringify(recipe)
+      body: JSON.stringify(reqBody)
     });
     const createdComment = await response.json();
     return createdComment;
@@ -45,6 +48,9 @@ const recipeSlice = createSlice({
     },
     setCommentContent(state, action) {
       state.addCommentForm.content = action.payload;
+    },
+    setCurrentId(state, action) {
+      state.addCommentForm.currentId = action.payload;
     }
   },
   extraReducers: {
@@ -61,6 +67,6 @@ const recipeSlice = createSlice({
     }
   }
 })
-export const { setCommentTitle, setCommentContent } = recipeSlice.actions;
+export const { setCommentTitle, setCommentContent, setCurrentId } = recipeSlice.actions;
 export default recipeSlice.reducer;
  

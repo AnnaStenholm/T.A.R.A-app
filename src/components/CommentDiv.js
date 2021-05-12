@@ -4,8 +4,9 @@ import Axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //6.4K (gzipped: 2.7K)
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'; //945 (gzipped: 586)
 import { useDispatch, useSelector } from 'react-redux';
-import { loadCommentData, postComment, setCommentTitle, setCommentContent } from '.././redux/recipeSlice';
+import { loadCommentData, postComment, setCommentTitle, setCommentContent, setCurrentId } from '.././redux/recipeSlice';
 import PostLike from './PostLike';
+
 // Add this in your component file
 require('react-dom');
 window.React2 = require('react');
@@ -29,6 +30,8 @@ const CommentDiv = ({recipeId, recipeTitle}) => {
             dispatch(loadCommentData(recipeUrl));
         }        
     })
+
+    dispatch(setCurrentId(recipeId));
 
     
     return (
