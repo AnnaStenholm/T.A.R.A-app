@@ -9,20 +9,30 @@ import { Container, Row, Col } from 'react-bootstrap';
 function PostForm() {
     return (
         
-            <div className="container">
+            <Container>
+                <Row>
+                    
                 <div className="heading-box">
                     <h1 className="heading-form">Publicera ditt recept</h1>
                 </div>
+                <Col>
                 <div className="form-box">
                     <VegoRecipeForm />
                 </div>
+                </Col>
+                <Col>
                 <div className="form-box">
                     <FiskRecipeForm />
                 </div>
+                </Col>
+                <Col>
                 <div className="form-box">
                     <KottRecipeForm />
                 </div>
-            </div>
+                </Col>
+                </Row>
+                </Container>
+           
         
     )
 
