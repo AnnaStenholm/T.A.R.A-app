@@ -81,7 +81,7 @@ const CommentDiv = ({recipeId, recipeTitle}) => {
 
                     </div>
                 </div>
-        ))} 
+        )).reverse()} 
 
 
         

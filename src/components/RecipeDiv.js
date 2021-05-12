@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import CommentLink from './CommentLink';
 import Gryta from './Ikoner/Gryta';
- 
+
 
 import PostLike from './PostLike';
 import { loadRecipeData } from '.././redux/categorySlice';
-import { Container, Row, Col } from 'react-bootstrap'; //3.1K (gzipped: 1.3K)
 
 const categories = {
     vego: "60828412282ecd001e7dd309",
@@ -35,12 +34,13 @@ const RecipeDiv = ({kategori}) => {
         }        
     }, [ categoryUrl ]);
 
-    
+   
+   
+
 
     return (
-    <> 
-
-        {
+    <>
+        { 
         recipeData.map(recipe => 
         <div key={recipe._id} className="card" style={{ marginBottom: '2em' }}>
             <div className="card-body">
@@ -60,7 +60,7 @@ const RecipeDiv = ({kategori}) => {
 
             </div>
         </div>
-        )};
+        ).reverse()};
 
     </>
 
