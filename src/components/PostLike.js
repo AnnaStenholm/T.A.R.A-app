@@ -21,7 +21,7 @@ const PostLike = ({recipeId}) => {
             .then(res => {
                 console.log(res.data)
             })
-     // Here's where the reload happens! Det gör det inte, men det hade ju varit kul
+     // Here's where the reload happens! Det gör det inte!
             .catch(res => {
             console.log(res)
             })

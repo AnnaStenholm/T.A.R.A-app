@@ -74,7 +74,9 @@ const CommentDiv = ({recipeId, recipeTitle}) => {
                         <p className="card-text">{comment.content}</p>
 
                         <div>
-                            <PostCommentLike recipeId={recipeId}/>
+                            <div style={{ float:'left', marginRight: '10px'}}>
+                            {comment.likes.length}</div>
+                            <PostCommentLike commentId={comment._id}/>
                         </div>
 
                     </div>

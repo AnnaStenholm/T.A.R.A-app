@@ -1,45 +1,55 @@
-import ReactDOM from "react-dom";
-import  { useEffect, useState } from 'react';
+import { useParams } from "react-router-dom";
+import { useState } from 'react';
+import Axios from 'axios';
 
+const PostCommentLike = ({commentId}) => {
+    
+    const {id} = useParams();
+    if(commentId == null || commentId == undefined) { commentId = id; }
+    
+    let url;
+    url = `https://forum-api-jkrop.ondigitalocean.app/comment/${commentId}/like`;
+    
+    const [data, setData] = useState({})
 
-const PostCommentLike = ({likeId}) => {
+    function submit(e) {
+        e.preventDefault();
+        Axios.post(url, {
+        })
+            .then(res => {
+                console.log(res.data)
+            })
+     // Here's where the reload happens! Det gör det inte!
+            .catch(res => {
+            console.log(res)
+            })
+    }
 
     
-    let likeUrl;
-    const [likeData, setLikeData] = useState([]); 
-
-    if (likeId){
-    likeUrl =
-    `https://forum-api-jkrop.ondigitalocean.app/category/${likeId}/thread`;
+     
+    function handle(e) {
+        const newdata = { ...data }
+        newdata[e.target.id] = e.target.value
+        setData(newdata)
+        console.log(newdata)
     }
+    
+  
 
+ 
 
-    useEffect(() => {
-        if (likeUrl) {
-            fetch(likeUrl)
-                .then(res => res.json())
-                .then((data) => setLikeData(data)); 
-        }        
-    }, [ likeUrl ]);
+    return <> 
+    
+            <form onSubmit={(e) => submit(e)}>
+            
+            <button className="btn btn-outline-dark"
+            style={{ float:'left', marginRight: '20px', fontSize: '1.5em'}}
+            onClick={(e) => handle(e)}>
+            <i className="fas fa-thumbs-up" onClick={(e) => handle(e)} > </i>
+            </button>
 
-    if (!likeId) {
-
-        return <p><strong>Inga likes</strong></p>
-
-    } else {
-
-    return (
-    <> 
-        {
-            likeData.map(like => 
-        <div key={like._id}>
-            <strong>{like.likes.length}</strong>
-        
-        </div>)
-        } 
+            </form>
     </>
-    );
-    }
-};
+}
 
 export default PostCommentLike;
