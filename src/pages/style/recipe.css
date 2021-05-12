@@ -35,7 +35,6 @@
 
 ul {
     margin-top: 20px;
-    border: 1px solid #E2E2E2;
     align-items: center;
     border-radius: 14px;
 }
@@ -44,7 +43,6 @@ li{
     list-style: none;
     color: #51321D;
     text-align: center;
-    border-bottom: 1px solid #E2E2E2;
     margin-top: 4px;
 }
 
