@@ -36,7 +36,7 @@ const RecipeDiv = ({kategori}) => {
    
 
     if (!categoryId){
-        return <h4 className="text-center">Ingen kategori vald</h4>
+        return <Gryta />
     } else {
     return (
     <>
