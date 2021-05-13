@@ -11,6 +11,7 @@ import Gryta from './components/Ikoner/Gryta';
 import Navbar from './components/navbar';
 import { FooterContainer } from './containers/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Search from './components/Search';
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -22,6 +23,7 @@ const App = (props) =>
 
 <Router>
   <Navbar />
+  <Search/>
   <Switch>
 
 //Tibah 
