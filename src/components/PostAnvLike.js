@@ -1,16 +1,11 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //6.4K (gzipped: 2.7K)
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'; //945 (gzipped: 586)
+
+import { useState } from 'react';
 import Axios from 'axios';
 
-const PostLike = ({recipeId, numberLikes}) => {
-    
-    const {id} = useParams();
-    if(recipeId == null || recipeId == undefined) { recipeId = id; }
+const PostAnvLike = () => {
     
     let url;
-    url = `https://forum-api-jkrop.ondigitalocean.app/thread/${recipeId}/like`;
+    url = `https://forum-api-jkrop.ondigitalocean.app/thread/609cea90e747d9001deea510/like`;
     
     const [data, setData] = useState({})
 
@@ -19,13 +14,12 @@ const PostLike = ({recipeId, numberLikes}) => {
         Axios.post(url, {
         })
             .then(res => {
-                return(res.data)
+                console.log(res.data)
             })
      // Here's where the reload happens! Det gör det inte!
             .catch(res => {
-            return(res.data)
+            console.log(res.data)
             })
-            
         
     }
 
@@ -35,7 +29,7 @@ const PostLike = ({recipeId, numberLikes}) => {
         const newdata = { ...data }
         newdata[e.target.id] = e.target.value
         setData(newdata)
-        return(newdata)
+        console.log(newdata)
         
 
     }
@@ -51,11 +45,10 @@ const PostLike = ({recipeId, numberLikes}) => {
             style={{ float:'left', marginRight: '20px', fontSize: '1.5em'}}
             onClick={(e) => handle(e)}>
             <i className="fas fa-thumbs-up" onClick={(e) => handle(e)} > </i>
-            
             </button>
 
             </form>
     </>
 }
 
-export default PostLike;
+export default PostAnvLike;

@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './style/recipe.css';
 import fishtacos from '../bilder/fishtacos.jpeg';
-
+import PostAnvLike from '../components/PostAnvLike'
+import CommentAnvLink from '../components/CommentAnvLink'
 
 
 const UserReceipe = () => {
@@ -66,6 +67,10 @@ const UserReceipe = () => {
                         </ul>
                     </div>
                     </Col>
+                    </Row>
+                    <Row>
+                        <PostAnvLike/>
+                        <CommentAnvLink/>
                     </Row>
                     </Container>   
         </div>
