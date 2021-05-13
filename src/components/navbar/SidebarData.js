@@ -39,17 +39,5 @@ export const SidebarData = [
         path: '/postpage',
         icon:<FaIcons.FaPlus/>,
         cName: 'nav-text'
-    },
-    {
-        title: 'REGISTRERA DIG',
-        path: '/registrera-dig',
-        icon: <AiIcons.AiOutlinePlusCircle/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'LOGGA IN',
-        path: '/logga-in',
-        icon: <AiIcons.AiOutlineLogin/>,
-        cName: 'nav-text'
-    },
+    }
 ]
