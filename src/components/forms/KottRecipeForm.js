@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Axios from 'axios';
 import './style/form.css';
 import meat from '../Ikoner/meat.png';
+import { Form } from 'react-bootstrap';
 
 const KottRecipeForm = () => {
     const url = "https://forum-api-jkrop.ondigitalocean.app/category/60828441282ecd001e7dd30b/thread";
@@ -31,20 +32,22 @@ const KottRecipeForm = () => {
 
     return <div>
         <h2 className="title-category">Kött</h2>
-        <form onSubmit={(e) => submit(e)}>
-            <div className="content-title">
-                <input onChange={(e) => handle(e)} id="title" value={data.title} placeholder="Rubrik" type='text'></input>
-            </div>
-            <div className="content-recipe">
-                <textarea onChange={(e) => handle(e)} id="content" value={data.content} placeholder="Skriv ditt recept här." type='text' />
-            </div>
-            <button>Publicera</button>
-            <div className="meat-box">
-                <div className="icon-meat">
-                    <img src={meat} alt="meat"/>
+        <Form onSubmit={(e) => submit(e)}>
+            <div class="mb-3">
+                <div className="content-title">
+                    <input onChange={(e) => handle(e)} className="form-control" id="title" value={data.title} placeholder="Rubrik" type='text'></input>
                 </div>
             </div>
-        </form>
+            <div class="mb-3">
+                <textarea onChange={(e) => handle(e)} className="form-control" id="content" rows="3" value={data.content} placeholder="Skriv ditt recept här." type='text' />
+            </div>
+            <button type="button" class="btn btn-outline-*-text-nowrap">Publicera</button>
+            <div className="meat-box">
+                <div className="icon-meat">
+                    <img src={meat} alt="meat" />
+                </div>
+            </div>
+        </Form>
     </div>
 
 }

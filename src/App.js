@@ -10,6 +10,7 @@ import CommentDiv from './components/CommentDiv';
 import Gryta from './components/Ikoner/Gryta';
 import Navbar from './components/navbar';
 import { FooterContainer } from './containers/footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
   BrowserRouter as Router, 
   Switch, 

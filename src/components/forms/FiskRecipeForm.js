@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Axios from 'axios';
 import './style/form.css';
 import fish from '../Ikoner/fish.png';
+import { Form } from 'react-bootstrap';
 
 const FiskRecipeForm = () => {
     const url = "https://forum-api-jkrop.ondigitalocean.app/category/608284a6282ecd001e7dd30c/thread";
@@ -31,20 +32,22 @@ const FiskRecipeForm = () => {
 
     return <div>
         <h2 className="title-category">Fisk</h2>
-        <form onSubmit={(e) => submit(e)}>
+        <Form onSubmit={(e) => submit(e)}>
+        <div class="mb-3">
             <div className="content-title">
-                <input onChange={(e) => handle(e)} id="title" value={data.title} placeholder="Rubrik" type='text'></input>
+                <input onChange={(e) => handle(e)} className="form-control" id="title" value={data.title} placeholder="Rubrik" type='text'></input>
             </div>
-            <div className="content-recipe">
-                <textarea onChange={(e) => handle(e)} id="content" value={data.content} placeholder="Skriv ditt recept här." type='text' />
             </div>
-            <button>Publicera</button>
+            <div class="mb-3">
+                <textarea onChange={(e) => handle(e)} className="form-control" id="content" rows="3" value={data.content} placeholder="Skriv ditt recept här." type='text' />
+            </div>
+            <button type="button" class="btn btn-outline-*-text-nowrap">Publicera</button>
             <div className="fish-box">
                 <div className="icon-fish">
                     <img src={fish} alt="fish"/>
                 </div>
             </div>
-        </form>
+        </Form>
     </div>
 
 }

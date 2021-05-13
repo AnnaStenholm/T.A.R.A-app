@@ -22,8 +22,9 @@
     background-color: #ffff;
     border-style: outset;
     border-width: 3px;
-    margin: 0px 50px 80px 0px;
+    padding: 5px;
     background-color: #F0DBC1;
+    position: relative;
 }
 
 form{
@@ -38,6 +39,24 @@ textarea{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.form-control{
+    overflow: visible;
+    
+}
+.mb-3 {
+    box-sizing: border-box;
+    width: 290px;
+    height: 40px;
+    padding: 5px;
+}
+
+.btn{
+    overflow: hidden;
+    position: static;
+    margin-top: 60px;
+}
+
+
 .title-category{
     text-align: center;
     font-size: 24px;
@@ -48,9 +67,6 @@ textarea{
     margin-bottom: 30px;
 }
 
-.content-recipe{
-   margin-bottom: 60px; 
-}
 
 button{
     align-items: center;
