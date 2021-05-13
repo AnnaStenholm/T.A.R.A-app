@@ -60,12 +60,12 @@ const RecipeDiv = ({kategori}) => {
 
             </div>
         </div>
-        ).reverse()};
+        ).reverse()}
 
     </>
 
     );
-    }}
-;
+    }};
+
  
 export default RecipeDiv;
