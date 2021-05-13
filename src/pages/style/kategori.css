@@ -20,7 +20,11 @@
 
 .kategori-text a{
     text-decoration: none;
-    color: #304227;
+    color: #740b0b;
+}
+.kategori-text a:hover{
+    color: #EDC5BA;
+    text-decoration: none;
 }
 
 .kategori-img img{
