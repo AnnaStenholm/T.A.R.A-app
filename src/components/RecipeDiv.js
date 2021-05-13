@@ -51,7 +51,7 @@ const RecipeDiv = ({kategori}) => {
         <div>
             <div style={{ float:'left', marginRight: '10px'}}>
                 {recipe.likes.length}</div>
-                <PostLike recipeId={recipe._id}/>
+                <PostLike recipeId={recipe._id} numberLikes={recipe.likes.length}/>
             <div style={{ float:'left', marginRight: '10px'}}>
                 {recipe.comments.length}</div>
                 <CommentLink recipeId={recipe._id} recipeTitle={recipe.title} />

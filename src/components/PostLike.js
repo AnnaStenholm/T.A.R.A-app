@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //6.4K (gzippe
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'; //945 (gzipped: 586)
 import Axios from 'axios';
 
-const PostLike = ({recipeId}) => {
+const PostLike = ({recipeId, numberLikes}) => {
     
     const {id} = useParams();
     if(recipeId == null || recipeId == undefined) { recipeId = id; }
@@ -23,8 +23,9 @@ const PostLike = ({recipeId}) => {
             })
      // Here's where the reload happens! Det gör det inte!
             .catch(res => {
-            console.log(res)
+            console.log(res.data)
             })
+        
     }
 
     
@@ -34,6 +35,8 @@ const PostLike = ({recipeId}) => {
         newdata[e.target.id] = e.target.value
         setData(newdata)
         console.log(newdata)
+        
+
     }
     
   
@@ -41,7 +44,7 @@ const PostLike = ({recipeId}) => {
  
 
     return <> 
-            <form onSubmit={(e) => submit(e)}>
+            <form onSubmit={ (e) => submit(e)}>
             
             <button className="btn btn-outline-dark"
             style={{ float:'left', marginRight: '20px', fontSize: '1.5em'}}

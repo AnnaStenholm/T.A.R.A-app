@@ -8,9 +8,10 @@ const CommentLink = ({recipeId}) => {
 
 return <>
 <Link to={`/recept/${recipeId}/kommentarer`} style={{color: '#304227'}}>
-<FontAwesomeIcon 
-icon={ faComments } style={{ float:'left', fontSize: '2em', marginTop: '0px'}}>
-</FontAwesomeIcon>
+<button className="btn btn-outline-dark"
+            style={{ float:'left', marginRight: '20px', fontSize: '1.5em'}}>
+            <i className="fas fa-comment" > </i>
+            </button>
 </Link>
 </>
 };
