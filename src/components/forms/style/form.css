@@ -65,7 +65,7 @@ textarea{
     margin-top: 70px;
 }
 
-button{
+.buttonForm{
     align-items: center;
     overflow: hidden;
     position: static;

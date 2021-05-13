@@ -43,7 +43,7 @@ const VegoRecipeForm = () => {
                 <textarea onChange={(e) => handle(e)} className="form-control" id="content" rows="3" value={data.content} placeholder="Skriv ditt recept här." type='text' />
             </div>
             <div className="buttonPlace">
-            <button>Publicera</button>
+            <button className="buttonForm">Publicera</button>
             </div>
             <div className="vego-box">
                 <div className="icon-vego">
