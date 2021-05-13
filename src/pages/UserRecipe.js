@@ -66,11 +66,11 @@ const UserReceipe = () => {
                             <li><p>5. Servera allt med tortillabröd, jalpeños, chipotlepasta, doritos och majs. Dryckestips är den mexikanska ölen Sol eller en torr riesling.</p></li>
                         </ul>
                     </div>
+                    <div className="postLike"><PostAnvLike/></div>
+                        <div className="CommentLink"><CommentAnvLink/></div>
                     </Col>
-                    </Row>
-                    <Row>
-                        <PostAnvLike/>
-                        <CommentAnvLink/>
+                    
+                        
                     </Row>
                     </Container>   
         </div>

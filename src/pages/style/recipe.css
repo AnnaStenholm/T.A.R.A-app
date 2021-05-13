@@ -67,6 +67,11 @@ li{
     width: 650px;
     height:565px;
     float: right;
-    margin-top:20px;
+    margin:20px 0px;
     background-color: #F8EEE2;
 }
+
+.postLike{
+   margin-left: 250px; 
+}
+
