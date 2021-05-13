@@ -41,7 +41,9 @@ const KottRecipeForm = () => {
             <div class="mb-3">
                 <textarea onChange={(e) => handle(e)} className="form-control" id="content" rows="3" value={data.content} placeholder="Skriv ditt recept här." type='text' />
             </div>
-            <button type="button" class="btn btn-outline-*-text-nowrap">Publicera</button>
+            <div className="buttonPlace">
+            <button>Publicera</button>
+            </div>
             <div className="meat-box">
                 <div className="icon-meat">
                     <img src={meat} alt="meat" />

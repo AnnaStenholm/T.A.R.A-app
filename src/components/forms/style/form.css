@@ -50,12 +50,6 @@ textarea{
     padding: 5px;
 }
 
-.btn{
-    overflow: hidden;
-    position: static;
-    margin-top: 60px;
-}
-
 
 .title-category{
     text-align: center;
@@ -67,9 +61,15 @@ textarea{
     margin-bottom: 30px;
 }
 
+.buttonPlace{
+    margin-top: 70px;
+}
 
 button{
     align-items: center;
+    overflow: hidden;
+    position: static;
+    margin-top: 60px;
     background-color: #304227;
     color: #ffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
