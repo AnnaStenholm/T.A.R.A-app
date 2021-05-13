@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './style/recipe.css';
 import fishtacos from '../bilder/fishtacos.jpeg';
@@ -7,6 +7,19 @@ import CommentAnvLink from '../components/CommentAnvLink';
 
 
 const UserReceipe = () => {
+
+   
+    const [commentData, setCommentData] = useState({}); 
+    const url = 'https://forum-api-jkrop.ondigitalocean.app/thread/609cea90e747d9001deea510/comment';
+    
+    useEffect(() => {
+        if (url) {
+            fetch(url)
+                .then(res => res.json())
+                .then((data) => setCommentData(data)); 
+        }        
+    }, [ url ]);
+
     return (
     <div>
         <Container>
@@ -67,7 +80,8 @@ const UserReceipe = () => {
                         </ul>
                     </div>
                     <div className="postLike"><PostAnvLike/></div>
-                        <div className="CommentLink"><CommentAnvLink/></div>
+                        
+                        <div className="CommentLink">{commentData.length}<CommentAnvLink/></div>
                     </Col>
                     
                         

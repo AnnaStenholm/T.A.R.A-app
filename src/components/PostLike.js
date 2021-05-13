@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //6.4K (gzipped: 2.7K)
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'; //945 (gzipped: 586)
+import { useState } from 'react';
+
 import Axios from 'axios';
 
 const PostLike = ({recipeId, numberLikes}) => {
